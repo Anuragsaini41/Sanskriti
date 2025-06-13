@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+  <link rel="stylesheet" href="./signup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="signup-container">
+  <h2>Signup</h2>
+  <form id="signupForm">
+    <div class="input-field">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required />
+    </div>
+    <div class="input-field">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+    </div>
+    <div class="input-field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div class="input-field">
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" required />
+    </div>
+    <div class="input-field">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required />
+    </div>
+    <div class="input-field">
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="input-field">
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" required />
+    </div>
+    <div class="input-field">
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" required />
+    </div>
+    <div class="input-field">
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required />
+    </div>
+    <div class="input-field">
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" required />
+    </div>
+    <div class="input-field">
+      <label for="password">Password</label>
+      <div class="password-container">
+        <input type="password" id="password" name="password" required />
+        <i class="far fa-eye-slash show-password-btn" id="togglePassword" onclick="togglePassword('password', 'togglePassword')"></i>
+      </div>
+    </div>
+    <div class="input-field">
+      <label for="confirmPassword">Confirm Password</label>
+      <div class="password-container">
+        <input type="password" id="confirmPassword" name="confirmPassword" required />
+        <i class="far fa-eye-slash show-password-btn" id="toggleConfirmPassword" onclick="togglePassword('confirmPassword', 'toggleConfirmPassword')"></i>
+      </div>
+    </div>
+
+    <div id="otp-section" style="display: none;">
+      <div class="input-field">
+        <label for="otp">Enter OTP</label>
+        <input type="text" id="otp" name="otp" />
+      </div>
+    </div>
+
+    <button type="submit" class="signup-btn">Signup</button>
+    <p class="error-message" id="errorMessage"></p>
+  </form>
+  <p class="login-redirect">Already have an account?
+    <a href="./login.html" class="login-link">Log In</a>
+  </p>
+</div>
+<script src="./signup.js"></script>
+<script>
+  // New function to toggle password visibility with eye icons
+  function togglePassword(inputId, toggleId) {
+    const passwordField = document.getElementById(inputId);
+    const toggleIcon = document.getElementById(toggleId);
+    
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      toggleIcon.classList.remove("fa-eye-slash");
+      toggleIcon.classList.add("fa-eye");
+    } else {
+      passwordField.type = "password";
+      toggleIcon.classList.remove("fa-eye");
+      toggleIcon.classList.add("fa-eye-slash");
+    }
+  }
+</script>
+</body>
+</html>

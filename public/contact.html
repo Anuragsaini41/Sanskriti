@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Sanskriti</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Sanskriti</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#community">Popular</a></li>
+        <li><a href="#new-uploads">New Uploads</a></li>
+        <li><a href="./test/test.html">Quiz</a></li>
+        <li><a href="./hotel_list.html">Hotels</a></li>
+        <li><a href="./marketplace/market.html">Market Place</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="right-side">
+        <a href="./upload/UploadForm.html" class="upload-btn">Upload</a>
+
+        <div class="account-menu">
+          <button class="account-btn" id="accountBtn">My Account</button>
+          <div class="dropdown-content" id="dropdownContent">
+            <a href="./auth/signup.html" id="signupLink">Sign Up</a>
+            <a href="./auth/login.html" id="loginLink">Login</a>
+            <p id="userName" style="display: none;">
+              <span id="userDisplayName" class="username"></span>
+              <button id="signOutBtn" class="signout-btn">Sign Out</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Contact Section -->
+  <section id="contact-section" class="contact-us">
+    <div class="contact-container">
+      <!-- Contact Form with improved structure -->
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+          </div>
+          
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+
+      <!-- Contact Info with icons -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><i class="fas fa-envelope"></i> Email us at: <a href="mailto:info@sanskriti.com">info@sanskriti.com</a></p>
+        <p><i class="fas fa-phone"></i> Call us: <a href="tel:+911234567890">+91 123 456 7890</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Visit us: 123 Cultural Street, New Delhi, India</p>
+        
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="https://facebook.com/yourprofile" target="_blank">
+            <img src="./img/facebook.png" alt="Facebook" class="social-icon">
+          </a></li>
+          <li><a href="https://twitter.com/yourprofile" target="_blank">
+            <img src="./img/twitter.png" alt="Twitter" class="social-icon">
+          </a></li>
+          <li><a href="https://instagram.com/yourprofile" target="_blank">
+            <img src="./img/instagram.png" alt="Instagram" class="social-icon">
+          </a></li>
+          <li><a href="https://linkedin.com/in/yourprofile" target="_blank">
+            <img src="./img/linkedin.jpg" alt="LinkedIn" class="social-icon">
+          </a></li>
+        </ul>
+        <img src="./img/contact.jpeg" alt="Contact Image" class="contact-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Sanskriti. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="sanskriti.js"></script>
+</body>
+</html>

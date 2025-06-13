@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - Sanskriti Social</title>
+  <link rel="stylesheet" href="social.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar with same styling as main site -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Sanskriti Social</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="social.html">Explore</a></li>
+        <li><a href="my-posts.html" class="active">My Posts</a></li>
+        <li><a href="../marketplace/market.html">Marketplace</a></li>
+      </ul>
+      <div class="right-side">
+        <button id="create-post-btn" class="create-btn">Create Post</button>
+        <div class="account-menu" id="profileMenu">
+          <img src="../img/default-avatar.jpg" alt="Profile" class="profile-pic" id="nav-profile-pic">
+          <div class="dropdown-content">
+            <a href="profile.html" class="active">My Profile</a>
+            <a href="saved-posts.html">Saved Places</a>
+            <a href="../Dashboard/dashboard.html">Dashboard</a>
+            <a href="#" id="signOutBtn">Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="profile-main">
+    <div class="profile-header">
+      <div class="profile-cover"></div>
+      <div class="profile-info-container">
+        <div class="profile-avatar-container">
+          <img src="../img/default-avatar.jpg" alt="Profile" id="profile-avatar">
+        </div>
+        <div class="profile-details">
+          <h1 id="profile-name">Loading...</h1>
+          <p id="profile-location"><i class="fas fa-map-marker-alt"></i> <span id="user-location">Loading...</span></p>
+          <div class="profile-stats">
+            <div class="stat">
+              <span class="stat-value" id="posts-count">0</span>
+              <span class="stat-label">Posts</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="places-visited">0</span>
+              <span class="stat-label">Places Visited</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="saved-places">0</span>
+              <span class="stat-label">Saved Places</span>
+            </div>
+          </div>
+          <a href="../Dashboard/dashboard.html" class="edit-profile-btn">
+            <i class="fas fa-cog"></i> Edit Profile in Dashboard
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-content">
+      <div class="profile-bio-section">
+        <div class="section-header">
+          <h2>Bio</h2>
+          <button id="edit-bio-btn" class="icon-btn"><i class="fas fa-edit"></i></button>
+        </div>
+        <div id="bio-display">
+          <p id="user-bio">Tell people about yourself and your travels...</p>
+        </div>
+        <div id="bio-edit" style="display: none;">
+          <textarea id="bio-text" maxlength="300"></textarea>
+          <div class="bio-actions">
+            <button id="cancel-bio" class="action-btn cancel">Cancel</button>
+            <button id="save-bio" class="action-btn save">Save</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-posts-section">
+        <div class="section-header">
+          <h2>My Posts</h2>
+        </div>
+        <div id="user-posts" class="posts-container">
+          <!-- Posts will be dynamically loaded here -->
+        </div>
+        <div class="loading" id="loading-posts">
+          <div class="spinner"></div>
+          <p>Loading your posts...</p>
+        </div>
+        <div class="no-posts" id="no-posts" style="display: none;">
+          <i class="fas fa-camera"></i>
+          <p>You haven't shared any posts yet.</p>
+          <button id="create-first-post" class="create-btn">Create Your First Post</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Post Creation Modal - Same as in social.html -->
+  <div class="modal" id="create-post-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Share Your Travel Experience</h2>
+      <form id="post-form">
+        <div class="form-group">
+          <label for="post-title">Title</label>
+          <input type="text" id="post-title" placeholder="Give your post a catchy title" required>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="post-state">State</label>
+            <select id="post-state" required>
+              <option value="" disabled selected>Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <!-- Add all Indian states -->
+              <option value="West Bengal">West Bengal</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="post-city">City/Place</label>
+            <input type="text" id="post-city" placeholder="City or specific location" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="post-description">Description</label>
+          <textarea id="post-description" placeholder="Tell us about this place..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="post-images">Upload Images</label>
+          <div class="image-upload-container">
+            <div class="image-upload-box">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Click to upload or drag images here</p>
+              <input type="file" id="post-images" multiple accept="image/*">
+            </div>
+            <div class="image-preview" id="image-preview"></div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="post-tags">Tags (Separate with commas)</label>
+          <input type="text" id="post-tags" placeholder="heritage, nature, food...">
+        </div>
+        
+        <div class="form-footer">
+          <button type="button" class="cancel-btn">Cancel</button>
+          <button type="submit" class="submit-btn">Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit Post Modal -->
+  <div class="modal" id="edit-post-modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-edit-modal">&times;</span>
+      <h2>Edit Your Post</h2>
+      <form id="edit-post-form">
+        <input type="hidden" id="edit-post-id">
+        <!-- Same form fields as create post -->
+        <div class="form-group">
+          <label for="edit-post-title">Title</label>
+          <input type="text" id="edit-post-title" placeholder="Give your post a catchy title" required>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="edit-post-state">State</label>
+            <select id="edit-post-state" required>
+              <option value="" disabled selected>Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <!-- Add all Indian states -->
+              <option value="West Bengal">West Bengal</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="edit-post-city">City/Place</label>
+            <input type="text" id="edit-post-city" placeholder="City or specific location" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="edit-post-description">Description</label>
+          <textarea id="edit-post-description" placeholder="Tell us about this place..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="edit-post-images">Upload New Images</label>
+          <div class="image-upload-container">
+            <div class="image-upload-box">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Click to upload or drag images here</p>
+              <input type="file" id="edit-post-images" multiple accept="image/*">
+            </div>
+            <div class="image-preview" id="edit-image-preview"></div>
+            
+            <div class="current-images" id="current-images">
+              <!-- Current images will be shown here -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="edit-post-tags">Tags (Separate with commas)</label>
+          <input type="text" id="edit-post-tags" placeholder="heritage, nature, food...">
+        </div>
+        
+        <div class="form-footer">
+          <button type="button" class="delete-btn" id="delete-post-btn">Delete Post</button>
+          <div>
+            <button type="button" class="cancel-btn" id="cancel-edit-btn">Cancel</button>
+            <button type="submit" class="submit-btn">Save Changes</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sanskriti Social. Share the beauty of India.</p>
+    </div>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

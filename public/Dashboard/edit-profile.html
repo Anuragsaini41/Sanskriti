@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile | Sanskriti</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="edit-profile.css">
+</head>
+<body>
+  <div class="edit-profile-container">
+    <h2>Edit Your Profile</h2>
+    <form id="editProfileForm">
+      <div class="input-field">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+      </div>
+      <div class="input-field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+      </div>
+      <div class="input-field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+      </div>
+      <div class="input-field">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="Enter your city" />
+      </div>
+      <div class="input-field">
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" placeholder="Enter your state" />
+      </div>
+      <div class="input-field">
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" placeholder="Enter your country" />
+      </div>
+      <button type="submit" class="save-btn">Save Changes</button>
+      <p class="error-message" id="errorMessage"></p>
+    </form>
+  </div>
+  
+  <script src="edit-profile.js" defer></script>
+</body>
+</html>

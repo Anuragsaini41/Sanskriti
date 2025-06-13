@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Sanskriti</title>
+    <link rel="stylesheet" href="../results.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <nav class="frosted-navbar">
+        <div class="logo">Sanskriti Admin</div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../test.html">Quiz</a></li>
+            <li><a href="../results.html">Results</a></li>
+        </ul>
+    </nav>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <div class="admin-user">
+                <div class="admin-user-icon" id="user-initial">A</div>
+                <div>
+                    <div id="admin-username">Admin User</div>
+                    <div id="admin-access-level" style="font-size: 12px; color: #666;">Full Access</div>
+                </div>
+            </div>
+            <button id="logout-btn" class="admin-btn">Logout</button>
+        </div>
+        
+        <div class="admin-tabs">
+            <div class="admin-tab active" data-tab="questions-tab">Questions</div>
+            <div class="admin-tab" data-tab="settings-tab">Quiz Settings</div>
+            <div class="admin-tab" data-tab="results-tab">Results</div>
+        </div>
+        
+        <div id="questions-tab" class="tab-content active">
+            <h2>Manage Quiz Questions</h2>
+            
+            <div class="question-type-selector">
+                <label for="type-selector">Question Type:</label>
+                <select id="type-selector">
+                    <option value="type_1">Type 1</option>
+                    <option value="type_2">Type 2</option>
+                    <option value="type_3">Type 3</option>
+                </select>
+                <button id="create-question" class="admin-btn">Create New Question</button>
+            </div>
+            
+            <div class="question-list" id="question-list">
+                <!-- Questions will be loaded here -->
+                <div class="question-item">Loading questions...</div>
+            </div>
+            
+            <div class="question-editor" id="question-editor" style="display: none;">
+                <h3 id="editor-heading">Edit Question</h3>
+                
+                <div class="form-group">
+                    <label for="question-text">Question:</label>
+                    <textarea id="question-text" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Options:</label>
+                    
+                    <div class="option-row">
+                        <div class="option-label">A</div>
+                        <input type="text" id="option-a" placeholder="Option A text">
+                        <div class="correct-option">
+                            <input type="radio" name="correct-option" id="correct-a" value="a">
+                            <label for="correct-a">Correct</label>
+                        </div>
+                    </div>
+                    
+                    <div class="option-row">
+                        <div class="option-label">B</div>
+                        <input type="text" id="option-b" placeholder="Option B text">
+                        <div class="correct-option">
+                            <input type="radio" name="correct-option" id="correct-b" value="b">
+                            <label for="correct-b">Correct</label>
+                        </div>
+                    </div>
+                    
+                    <div class="option-row">
+                        <div class="option-label">C</div>
+                        <input type="text" id="option-c" placeholder="Option C text">
+                        <div class="correct-option">
+                            <input type="radio" name="correct-option" id="correct-c" value="c">
+                            <label for="correct-c">Correct</label>
+                        </div>
+                    </div>
+                    
+                    <div class="option-row">
+                        <div class="option-label">D</div>
+                        <input type="text" id="option-d" placeholder="Option D text">
+                        <div class="correct-option">
+                            <input type="radio" name="correct-option" id="correct-d" value="d">
+                            <label for="correct-d">Correct</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-actions">
+                    <button id="cancel-edit" class="admin-btn" style="background-color: #6c757d;">Cancel</button>
+                    <button id="save-question" class="admin-btn">Save Question</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="settings-tab" class="tab-content">
+            <h2>Quiz Settings</h2>
+            
+            <div class="quiz-settings">
+                <h3>Quiz Type</h3>
+                <p>Select the type of quiz you want to display:</p>
+                
+                <div class="quiz-type">
+                    <div class="quiz-type-header">
+                        <div class="quiz-type-title">
+                            <input type="radio" name="quiz-type" id="quiz-type-state" value="state">
+                            <label for="quiz-type-state">State Cultural Quiz</label>
+                        </div>
+                        <div class="quiz-type-points">500 points reward</div>
+                    </div>
+                    
+                    <div class="form-group" id="state-quiz-form">
+                        <label for="state-name">State Name:</label>
+                        <input type="text" id="state-name" placeholder="Enter state name">
+                    </div>
+                </div>
+                
+                <div class="quiz-type">
+                    <div class="quiz-type-header">
+                        <div class="quiz-type-title">
+                            <input type="radio" name="quiz-type" id="quiz-type-interstate" value="interstate" checked>
+                            <label for="quiz-type-interstate">Interstate Cultural Quiz</label>
+                        </div>
+                        <div class="quiz-type-points">1000 points reward</div>
+                    </div>
+                    
+                    <div class="form-group" id="interstate-quiz-form">
+                        <label for="interstate-states">States (comma-separated):</label>
+                        <input type="text" id="interstate-states" placeholder="E.g. Arunachal Pradesh, Kashmir, Tripura">
+                    </div>
+                </div>
+                
+                <div class="quiz-type">
+                    <div class="quiz-type-header">
+                        <div class="quiz-type-title">
+                            <input type="radio" name="quiz-type" id="quiz-type-india" value="india">
+                            <label for="quiz-type-india">Indian Cultural Quiz</label>
+                        </div>
+                        <div class="quiz-type-points">2000 points reward</div>
+                    </div>
+                </div>
+                
+                <div class="settings-actions">
+                    <button id="save-settings" class="admin-btn">Save Settings</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="results-tab" class="tab-content">
+            <h2>Quiz Results</h2>
+            
+            <div class="statistics-section">
+                <div class="stat-card">
+                    <div id="admin-total-participants" class="stat-number">0</div>
+                    <div class="stat-label">Total Participants</div>
+                </div>
+                <div class="stat-card">
+                    <div id="admin-perfect-scores" class="stat-number">0</div>
+                    <div class="stat-label">Perfect Scores</div>
+                </div>
+                <div class="stat-card">
+                    <div id="admin-avg-score" class="stat-number">0</div>
+                    <div class="stat-label">Average Score</div>
+                </div>
+            </div>
+            
+            <div class="export-section">
+                <button id="admin-export-results" class="export-btn">Export All Results</button>
+                <button id="admin-reset-results" class="reset-btn">
+                    <i class="fas fa-trash-alt"></i> Reset All Results
+                </button>
+            </div>
+            
+            <div id="results-list" style="margin-top: 30px;">
+                <h3>Recent Participants</h3>
+                <table class="winners-table" style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Score</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="participants-tbody">
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sanskriti. All Rights Reserved.</p>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

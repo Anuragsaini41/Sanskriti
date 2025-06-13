@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanskriti Hotels | Experience India's Finest Stays</title>
+    <link rel="stylesheet" href="styleh.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="../index.html" class="logo">Sanskriti</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../marketplace/market.html">Marketplace</a></li>
+          <li><a href="../community/commune.html">Commune</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li>
+            <a href="../Dashboard/dashboard.html" class="my-account-btn"
+              >My Account</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Search -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="search-container">
+        <h1>Discover India's Hidden Gems</h1>
+        <p class="hero-subtitle">
+          Experience traditional hospitality with modern luxury across beautiful
+          destinations
+        </p>
+
+        <div class="search-box">
+          <div class="search-input">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Where are you going?" />
+          </div>
+
+          <div class="search-input">
+            <i class="far fa-calendar-alt"></i>
+            <input type="text" placeholder="Check-in" />
+          </div>
+
+          <div class="search-input">
+            <i class="far fa-calendar-alt"></i>
+            <input type="text" placeholder="Check-out" />
+          </div>
+
+          <div class="search-input">
+            <i class="fas fa-user"></i>
+            <select>
+              <option>2 Adults, 0 Children</option>
+              <option>1 Adult, 0 Children</option>
+              <option>2 Adults, 1 Child</option>
+              <option>2 Adults, 2 Children</option>
+            </select>
+          </div>
+
+          <button class="search-btn">
+            <i class="fas fa-search"></i> Search Hotels
+          </button>
+        </div>
+
+        <div class="quick-filters">
+          <div class="filter-tag"><i class="fas fa-tag"></i> Best Deals</div>
+          <div class="filter-tag">
+            <i class="fas fa-star"></i> Heritage Hotels
+          </div>
+          <div class="filter-tag">
+            <i class="fas fa-umbrella-beach"></i> Beach Resorts
+          </div>
+          <div class="filter-tag">
+            <i class="fas fa-mountain"></i> Hill Stations
+          </div>
+          <div class="filter-tag"><i class="fas fa-leaf"></i> Eco Stays</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Room Filter Options (Add after search-box) -->
+    <div class="filter-options">
+      <div class="filter-section price-section">
+        <h4>Price Range</h4>
+        <div class="price-range">
+          <input
+            type="range"
+            min="1000"
+            max="50000"
+            value="10000"
+            step="1000"
+          />
+          <div class="price-range-values">
+            <span>₹1,000</span>
+            <span class="current-price">₹10,000</span>
+            <span>₹50,000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-section property-section">
+        <h4>Property Type</h4>
+        <div class="property-options">
+          <div class="checkbox-container">
+            <input type="checkbox" id="hotels" checked />
+            <label for="hotels">Hotels</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="resorts" />
+            <label for="resorts">Resorts</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="homestays" />
+            <label for="homestays">Homestays</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="villas" />
+            <label for="villas">Villas</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-section star-section">
+        <h4>Star Rating</h4>
+        <div class="star-rating-options">
+          <div class="checkbox-container">
+            <input type="checkbox" id="five-star" />
+            <label for="five-star">5 <i class="fas fa-star"></i></label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="four-star" />
+            <label for="four-star">4 <i class="fas fa-star"></i></label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="three-star" />
+            <label for="three-star">3 <i class="fas fa-star"></i></label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="two-star" />
+            <label for="two-star">2 <i class="fas fa-star"></i></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-section guest-rating">
+        <h4>Guest Rating</h4>
+        <select>
+          <option selected>Any Rating</option>
+          <option>Excellent (4.5+)</option>
+          <option>Very Good (4.0+)</option>
+          <option>Good (3.5+)</option>
+          <option>Fair (3.0+)</option>
+        </select>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-button apply-button">Apply Filters</button>
+        <button class="filter-button reset-button">Reset</button>
+      </div>
+    </div>
+
+    <!-- View Options Bar -->
+    <div class="view-options">
+      <div class="container">
+        <div class="view-options-content">
+          <div class="results-count"><strong>268</strong> hotels found</div>
+          <div class="view-sorting">
+            <span>Sort by:</span>
+            <select id="sort-options">
+              <option value="recommended">Recommended</option>
+              <option value="price-low">Price (Low to High)</option>
+              <option value="price-high">Price (High to Low)</option>
+              <option value="rating">Guest Rating</option>
+            </select>
+            <div class="view-type">
+              <button class="view-btn active" data-view="grid">
+                <i class="fas fa-th-large"></i>
+              </button>
+              <button class="view-btn" data-view="list">
+                <i class="fas fa-th-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Destinations Section -->
+    <section class="destinations">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Popular Destinations</h2>
+          <p class="section-subtitle">
+            Explore India's most beloved travel destinations with our curated
+            collection of premium hotels and resorts
+          </p>
+        </div>
+
+        <div class="destination-grid">
+          <!-- Delhi Card -->
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="../img/destinations/delhi.jpg" alt="Delhi" />
+              <div class="destination-overlay"></div>
+            </div>
+            <div class="destination-info">
+              <h3>Delhi</h3>
+              <div class="destination-details">
+                <div class="price">Starting from ₹2,999</div>
+                <div class="hotel-count">
+                  <i class="fas fa-hotel"></i> 234+ Hotels
+                </div>
+              </div>
+              <div class="destination-highlights">
+                <span>Red Fort</span>
+                <span>Qutub Minar</span>
+                <span>India Gate</span>
+              </div>
+              <button class="explore-btn">Explore Delhi</button>
+            </div>
+          </div>
+
+          <!-- Mumbai Card -->
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="../img/destinations/mumbai.jpg" alt="Mumbai" />
+              <div class="destination-overlay"></div>
+            </div>
+            <div class="destination-info">
+              <h3>Mumbai</h3>
+              <div class="destination-details">
+                <div class="price">Starting from ₹3,499</div>
+                <div class="hotel-count">
+                  <i class="fas fa-hotel"></i> 189+ Hotels
+                </div>
+              </div>
+              <div class="destination-highlights">
+                <span>Gateway of India</span>
+                <span>Marine Drive</span>
+                
+              </div>
+              <button class="explore-btn">Explore Mumbai</button>
+            </div>
+          </div>
+
+          <!-- Jaipur Card -->
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="../img/destinations/jaipur.jpg" alt="Jaipur" />
+              <div class="destination-overlay"></div>
+            </div>
+            <div class="destination-info">
+              <h3>Jaipur</h3>
+              <div class="destination-details">
+                <div class="price">Starting from ₹2,699</div>
+                <div class="hotel-count">
+                  <i class="fas fa-hotel"></i> 156+ Hotels
+                </div>
+              </div>
+              <div class="destination-highlights">
+                <span>Hawa Mahal</span>
+                <span>Amber Fort</span>
+                <span>City Palace</span>
+              </div>
+              <button class="explore-btn">Explore Jaipur</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Hotels Section -->
+    <section class="featured-hotels">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Handpicked Hotels</h2>
+          <p class="section-subtitle">
+            Discover our selection of the finest stays across India
+          </p>
+        </div>
+
+        <div class="hotel-grid">
+          <!-- Hotel Card 1 -->
+          <div class="hotel-card">
+            <div class="hotel-image">
+              <img src="../img/hotels/hotel1.jpeg" alt="Taj Palace" />
+              <div class="hotel-tag tag-discount">20% OFF</div>
+              <button class="favorite-btn">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="hotel-info">
+              <h3 class="hotel-title">Taj Palace</h3>
+              <div class="hotel-rating">
+                ★★★★★ <span class="rating-count">(487)</span>
+              </div>
+              <div class="hotel-location">
+                <i class="fas fa-map-marker-alt"></i> New Delhi, 2.5 km from
+                center
+              </div>
+              <div class="hotel-amenities">
+                <div class="amenity-icon" title="WiFi">
+                  <i class="fas fa-wifi"></i>
+                </div>
+                <div class="amenity-icon" title="Pool">
+                  <i class="fas fa-swimming-pool"></i>
+                </div>
+                <div class="amenity-icon" title="Restaurant">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="amenity-icon" title="Spa">
+                  <i class="fas fa-spa"></i>
+                </div>
+              </div>
+              <div class="hotel-price-section">
+                <div class="price-display">
+                  <div class="price-amount">₹8,499</div>
+                  <div class="price-period">per night</div>
+                </div>
+                <button class="book-now-btn">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotel Card 2 -->
+          <div class="hotel-card">
+            <div class="hotel-image">
+              <img src="../img/hotels/hotel2.jpg" alt="Radisson Hotel Mumbai" />
+              <div class="hotel-tag tag-discount">15% OFF</div>
+              <button class="favorite-btn">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="hotel-info">
+              <h3 class="hotel-title">Radisson Hotel Mumbai</h3>
+              <div class="hotel-rating">
+                ★★★★★ <span class="rating-count">(562)</span>
+              </div>
+              <div class="hotel-location">
+                <i class="fas fa-map-marker-alt"></i> Mumbai, 1.8 km from
+                center
+              </div>
+              <div class="hotel-amenities">
+                <div class="amenity-icon" title="WiFi">
+                  <i class="fas fa-wifi"></i>
+                </div>
+                <div class="amenity-icon" title="Pool">
+                  <i class="fas fa-swimming-pool"></i>
+                </div>
+                <div class="amenity-icon" title="Restaurant">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="amenity-icon" title="Spa">
+                  <i class="fas fa-spa"></i>
+                </div>
+              </div>
+              <div class="hotel-price-section">
+                <div class="price-display">
+                  <div class="price-amount">₹9,399</div>
+                  <div class="price-period">per night</div>
+                </div>
+                <button class="book-now-btn">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="../img/hotels/hotel3.jpg" alt="The Astor - All Suites Hotel Candolim Goa">
+                        <div class="hotel-tag tag-discount">20% OFF</div>
+                        <button class="favorite-btn">
+      <i class="far fa-heart"></i>
+    </button>
+                    </div>
+                    <div class="hotel-info">
+                        <h3 class="hotel-title">The Astor - All Suites Hotel Goa </h3>
+                        <div class="hotel-rating">★★★★★ <span class="rating-count">(487)</span></div>
+                        <div class="hotel-location">
+                            <i class="fas fa-map-marker-alt"></i> Goa, 1.5 km from center
+                        </div>
+                        <div class="hotel-amenities">
+                            <div class="amenity-icon" title="WiFi"><i class="fas fa-wifi"></i></div>
+                            <div class="amenity-icon" title="Pool"><i class="fas fa-swimming-pool"></i></div>
+                            <div class="amenity-icon" title="Restaurant"><i class="fas fa-utensils"></i></div>
+                            <div class="amenity-icon" title="Spa"><i class="fas fa-spa"></i></div>
+                        </div>
+                        <div class="hotel-price-section">
+                            <div class="price-display">
+                                <div class="price-amount">₹10,499</div>
+                                <div class="price-period">per night</div>
+                            </div>
+                            <button class="book-now-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Guest Experiences</h2>
+          <p class="section-subtitle">
+            Hear what our guests have to say about their stays
+          </p>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                "The heritage palace hotel in Jaipur was absolutely stunning!
+                The architecture, the service, and the authentic Rajasthani
+                cuisine made our stay unforgettable. Will definitely return."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="../img/testimonials/user1.jpg" alt="Rajiv Sharma" />
+                </div>
+                <div class="author-info">
+                  <h4>Rajiv Sharma</h4>
+                  <p>Delhi, 2 weeks ago</p>
+                  <div class="testimonial-rating">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                "Sunset Beach Resort in Goa exceeded all our expectations!
+                Direct beach access, amazing seafood, and the staff went above
+                and beyond to make our honeymoon special."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="../img/testimonials/user2.jpg" alt="Priya Patel" />
+                </div>
+                <div class="author-info">
+                  <h4>Priya Patel</h4>
+                  <p>Mumbai, 1 month ago</p>
+                  <div class="testimonial-rating">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                "The Taj Palace in Mumbai offered the perfect luxury experience
+                with stunning views of the Arabian Sea. The spa treatments were
+                divine and the staff remembered our preferences."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="../img/testimonials/user3.jpg" alt="Arjun Kapoor" />
+                </div>
+                <div class="author-info">
+                  <h4>Arjun Kapoor</h4>
+                  <p>Bangalore, 3 weeks ago</p>
+                  <div class="testimonial-rating">★★★★☆</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotel Features Section -->
+    <section class="hotel-features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Book With Us</h2>
+          <p class="section-subtitle">
+            Experience the advantage of booking your stay through Sanskriti
+            Hotels
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Best Price Guarantee</h3>
+            <p>
+              Find a lower price? We'll match it and give you an additional 10%
+              off.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-ban"></i>
+            </div>
+            <h3>Free Cancellation</h3>
+            <p>
+              Plans change. Most bookings can be cancelled without any charge.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-concierge-bell"></i>
+            </div>
+            <h3>VIP Treatment</h3>
+            <p>Enjoy complimentary upgrades, late check-out and other perks.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>
+              Our team is available round the clock to assist with any request.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>About Sanskriti Hotels</h3>
+            <p>
+              Discover India's finest hotels and cultural stays. Experience
+              traditional hospitality with modern luxury across beautiful
+              destinations.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#">Popular Destinations</a></li>
+              <li><a href="#">Luxury Stays</a></li>
+              <li><a href="#">Heritage Hotels</a></li>
+              <li><a href="#">Beach Resorts</a></li>
+              <li><a href="#">Hill Stations</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Help & Support</h3>
+            <ul>
+              <li><a href="#">Booking Guide</a></li>
+              <li><a href="#">Cancellation Policy</a></li>
+              <li><a href="#">Hotel Partners</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Get in Touch</h3>
+            <ul class="contact-info">
+              <li><i class="far fa-envelope"></i> bookings@sanskriti.com</li>
+              <li><i class="fas fa-phone-alt"></i> +91 1800-123-4567</li>
+              <li><i class="fas fa-map-marker-alt"></i> Delhi, India</li>
+            </ul>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Sanskriti Hotels. Experience India's Finest Stays</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="hotel.js"></script>
+  </body>
+</html>

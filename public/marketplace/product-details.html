@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="product-details.css">
+</head>
+<body>
+  <nav>
+    <div id="brandname">SanskritiCart</div>
+    <a href="market.html" class="upload-btn">Back to Market</a>
+  </nav>
+
+  <main class="product-details">
+    <div class="product-container">
+      <div class="product-images">
+        <div class="image-slider">
+          <button class="slider-arrow prev-arrow">❮</button>
+          <img id="main-image" src="" alt="Product Image">
+          <button class="slider-arrow next-arrow">❯</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h1 id="product-name"></h1>
+        <p id="product-brand"></p>
+        <p id="product-price"></p>
+        <p id="product-description"></p>
+        <button class="add-to-cart" id="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-reviews">
+      <h2>Customer Reviews</h2>
+      <ul id="reviews-list">
+        <!-- Reviews will be dynamically added here -->
+      </ul>
+      <div class="add-review">
+        <textarea id="review-input" placeholder="Write your review here..."></textarea>
+        <button id="submit-review">Submit</button>
+      </div>
+    </div>
+    <div class="related-products">
+      <h2>Related Products</h2>
+      <div id="related-products-list">
+        <!-- Products will be loaded dynamically -->
+      </div>
+      <button class="related-nav-btn related-prev">&#10094;</button>
+      <button class="related-nav-btn related-next">&#10095;</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SanskritiCart. All rights reserved.</p>
+  </footer>
+
+  <script src="product-details.js"></script>
+</body>
+</html>

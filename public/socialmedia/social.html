@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanskriti Social - Discover India's Hidden Treasures</title>
+  <link rel="stylesheet" href="social.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar with same styling as main site -->
+  <nav class="navbar">
+    <div class="container">
+        <h1 class="logo"> Sanskriti Commune</h1>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a><span></span></li>
+            <li><a href="../hotel/hotel.html">Hotels</a><span></span></li>
+
+            <!-- <li><a href="social.html" class="active">Explore</a><span></span></li> -->
+            <!-- <li><a href="profile.html">My Profile</a><span></span></li> -->
+            <li><a href="../marketplace/market.html">SanskritiCart</a><span></span></li>
+        </ul>
+        <div class="right-side">
+            <button id="create-post-btn" class="upload-btn">Create Post</button>
+            <div class="account-menu" id="profileMenu">
+                <button class="account-btn">
+                    <img src="../img/default-avatar.jpg" alt="Profile" class="profile-pic" id="nav-profile-pic">
+                </button>
+                <div class="dropdown-content">
+                    <a href="profile.html">My Profile</a>
+                    <a href="saved-posts.html">Saved Places</a>
+                    <a href="../Dashboard/dashboard.html">Dashboard</a>
+                    <a href="#" id="signOutBtn">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Left Sidebar -->
+    <aside class="sidebar left-sidebar">
+      <div class="sidebar-section">
+        <h3>Discover</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="active"><i class="fas fa-fire"></i> Trending</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Near Me</a></li>
+          <li><a href="#"><i class="fas fa-star"></i> Top Rated</a></li>
+          <li><a href="#"><i class="fas fa-utensils"></i> Food & Cuisine</a></li>
+          <li><a href="#"><i class="fas fa-monument"></i> Historical Sites</a></li>
+          <li><a href="#"><i class="fas fa-mountain"></i> Nature & Wildlife</a></li>
+        </ul>
+      </div>
+      
+      <div class="sidebar-section">
+        <h3>Top States</h3>
+        <ul class="tag-list">
+          <li><a href="#">Rajasthan</a></li>
+          <li><a href="#">Kerala</a></li>
+          <li><a href="#">Himachal Pradesh</a></li>
+          <li><a href="#">Maharashtra</a></li>
+          <li><a href="#">Tamil Nadu</a></li>
+          <li><a href="#">View All States</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Content Feed -->
+    <section class="content-feed">
+      <div class="feed-header">
+        <h2>Explore India's Beauty</h2>
+        <div class="feed-filters">
+          <button class="active">All</button>
+          <button>Popular</button>
+          <button>Recent</button>
+          <input type="text" placeholder="Search places...">
+        </div>
+        <div class="feed-actions" style="text-align: right; margin-bottom: 15px;">
+          <button onclick="loadPosts()" class="refresh-btn" title="Refresh Posts">
+            <i class="fas fa-sync-alt"></i> Refresh
+          </button>
+        </div>
+      </div>
+
+      <div class="posts-container" id="posts-container">
+        <!-- Posts will be dynamically loaded here -->
+      </div>
+      
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Loading amazing places...</p>
+      </div>
+    </section>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar right-sidebar">
+      <div class="sidebar-section">
+        <h3>Featured Destination</h3>
+        <div class="featured-destination">
+          <img src="../img/social-media/featuredplace.jpg" alt="Featured Destination">
+          <h4>Varanasi, Uttar Pradesh</h4>
+          <p>One of the oldest continuously inhabited cities in the world.</p>
+          <a href="#" class="read-more-btn">Explore Varanasi</a>
+        </div>
+      </div>
+      
+      <div class="sidebar-section">
+        <h3>Upcoming Festivals</h3>
+        <ul class="festival-list">
+          <li>
+            <div class="festival-date">Apr 29</div>
+            <div class="festival-info">
+              <h4>Buddha Purnima</h4>
+              <p>Nationwide</p>
+            </div>
+          </li>
+          <li>
+            <div class="festival-date">May 23</div>
+            <div class="festival-info">
+              <h4>Summer Festival</h4>
+              <p>Mount Abu, Rajasthan</p>
+            </div>
+          </li>
+          <li>
+            <div class="festival-date">Jun 17</div>
+            <div class="festival-info">
+              <h4>Rath Yatra</h4>
+              <p>Puri, Odisha</p>
+            </div>
+          </li>
+          <li>
+            <div class="festival-date">Jul 10</div>
+            <div class="festival-info">
+              <h4>Hemis Festival</h4>
+              <p>Ladakh</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Post Creation Modal -->
+  <div class="modal" id="create-post-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Share Your Travel Experience</h2>
+      <form id="post-form">
+        <div class="form-group">
+          <label for="post-title">Title</label>
+          <input type="text" id="post-title" placeholder="Give your post a catchy title" required>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="post-state">State</label>
+            <select id="post-state" required>
+              <option value="" disabled selected>Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+              <optgroup label="Union Territories">
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Delhi">Delhi (NCT)</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+              </optgroup>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="post-city">City/Place</label>
+            <input type="text" id="post-city" placeholder="City or specific location" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="post-description">Description</label>
+          <textarea id="post-description" placeholder="Tell us about this place..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="post-images">Upload Images</label>
+          <div class="image-upload-container">
+            <div class="image-upload-box">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Click to upload or drag images here</p>
+              <input type="file" id="post-images" multiple accept="image/*">
+            </div>
+            <div class="image-preview" id="image-preview"></div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="post-tags">Tags (Separate with commas)</label>
+          <input type="text" id="post-tags" placeholder="heritage, nature, food...">
+        </div>
+        
+        <div class="form-footer">
+          <button type="button" class="cancel-btn">Cancel</button>
+          <button type="submit" class="submit-btn">Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>About Sanskriti Social</h3>
+            <p>Share and explore cultural experiences, traditions, and stories from across India. Connect with fellow culture enthusiasts.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="explore.html">Explore Posts</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="events.html">Cultural Events</a></li>
+                <li><a href="communities.html">Communities</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <ul class="footer-links">
+                <li><a href="guidelines.html">Community Guidelines</a></li>
+                <li><a href="help.html">Help Center</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Get in Touch</h3>
+          <ul class="footer-contact">
+            <li><i class="contact-icon">✉️</i> commune@sanskriti.com</li>
+            <li><i class="contact-icon">📞</i> +91 1800-123-4567</li>
+            <li><i class="contact-icon">📍</i> Delhi, India</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#" title="Facebook">📱</a>
+            <a href="#" title="Twitter">🐦</a>
+            <a href="#" title="Instagram">📸</a>
+            <a href="#" title="YouTube">📺</a>
+          </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Sanskriti Social. Share Your Cultural Journey</p>
+    </div>
+  </footer>
+
+  <script src="social.js"></script>
+</body>
+</html>

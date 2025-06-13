@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="market-cart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Sanskriti</h1>
+        <a href="market.html" class="upload-btn">Back to Market</a>
+    </nav>
+
+    <section class="marketplace">
+        <h1>Your Cart</h1>
+        <div class="items-container" id="cart-items"></div>
+        <h2 class="total-price">Total: ₹<span id="total-amount">0</span></h2>
+        <div class="checkout-container">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <div id="checkoutPopup" class="popup">
+        <div class="popup-content">
+            <button id="closePopup" class="close-btn">×</button>
+            <h2>Confirm Checkout</h2>
+            <p>Are you sure you want to proceed to checkout?</p>
+            <div class="popup-buttons">
+                <button id="cancelCheckout" class="cancel-btn">No</button>
+                <button id="confirmCheckout" class="confirm-btn">Yes</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sanskriti. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const cartContainer = document.getElementById("cart-items");
+        const totalAmountEl = document.getElementById("total-amount");
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        let total = 0;
+        cart.forEach((item, index) => {
+            total += item.price;
+            
+            // Enhanced item card with better structure
+            const card = document.createElement("div");
+            card.className = "item-card";
+            card.innerHTML = `
+                <img src="${item.image}" alt="${item.name}">
+                <div class="item-info">
+                    <div class="item-header">
+                        <h2>${item.name}</h2>
+                        <span class="price-tag">₹${item.price}</span>
+                    </div>
+                    <p>${item.description || "Premium quality authentic product."}</p>
+                    <div class="product-details">
+                        <div class="quantity-control">
+                            <button class="qty-btn" onclick="updateQuantity(${index}, -1)">-</button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn" onclick="updateQuantity(${index}, 1)">+</button>
+                        </div>
+                        <button class="remove-btn" onclick="removeItem(${index})">
+                            <i>🗑️</i> Remove
+                        </button>
+                    </div>
+                </div>
+            `;
+            cartContainer.appendChild(card);
+        });
+
+        totalAmountEl.textContent = total;
+
+        // Add the cart summary and coupon code section after the cart items
+        if (cart.length > 0) {
+            const summarySection = document.createElement("div");
+            summarySection.className = "cart-summary";
+            summarySection.innerHTML = `
+                <div class="summary-row">
+                    <span class="summary-label">Subtotal</span>
+                    <span class="summary-value">₹${total}</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Shipping</span>
+                    <span class="summary-value">₹${total > 1000 ? 0 : 99}</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Tax</span>
+                    <span class="summary-value">₹${Math.round(total * 0.05)}</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Total</span>
+                    <span class="summary-value summary-total">₹${total + (total > 1000 ? 0 : 99) + Math.round(total * 0.05)}</span>
+                </div>
+            `;
+            
+            document.querySelector(".marketplace").insertBefore(summarySection, document.querySelector(".total-price"));
+            document.querySelector(".total-price").style.display = "none";
+            
+            // Add coupon code section
+            const couponSection = document.createElement("div");
+            couponSection.className = "coupon-section";
+            couponSection.innerHTML = `
+                <h3>Have a coupon?</h3>
+                <div class="coupon-form">
+                    <input type="text" class="coupon-input" placeholder="Enter coupon code">
+                    <button class="apply-btn">Apply</button>
+                </div>
+            `;
+            
+            document.querySelector(".marketplace").insertBefore(couponSection, document.querySelector(".checkout-container"));
+        }
+
+        // Enhanced empty cart
+        if (cart.length === 0) {
+            cartContainer.innerHTML = `
+                <div class="empty-cart">
+                    <h3>Your cart is empty</h3>
+                    <p>Looks like you haven't added any products to your cart yet.</p>
+                    <a href="market.html" class="shopping-btn">Continue Shopping</a>
+                </div>
+            `;
+            document.querySelector(".checkout-btn").disabled = true;
+            document.querySelector(".checkout-btn").style.opacity = "0.5";
+            document.querySelector(".checkout-btn").style.cursor = "not-allowed";
+            document.querySelector(".total-price").style.display = "none";
+        }
+
+        // Add these functions
+        function updateQuantity(index, change) {
+            const qtyElement = document.querySelectorAll(".qty-value")[index];
+            let currentQty = parseInt(qtyElement.textContent);
+            currentQty = Math.max(1, currentQty + change);
+            qtyElement.textContent = currentQty;
+            
+            // Add animation class
+            qtyElement.classList.add('qty-changed');
+            
+            // Remove class after animation
+            setTimeout(() => {
+                qtyElement.classList.remove('qty-changed');
+            }, 500);
+            
+            // Update price
+            cart[index].quantity = currentQty;
+            recalculateTotal();
+        }
+        
+        function recalculateTotal() {
+            let newTotal = 0;
+            cart.forEach((item, index) => {
+                const qty = item.quantity || 1;
+                newTotal += item.price * qty;
+            });
+            
+            totalAmountEl.textContent = newTotal;
+            
+            // Update summary if it exists
+            const summaryValues = document.querySelectorAll(".summary-value");
+            if (summaryValues.length > 0) {
+                summaryValues[0].textContent = `₹${newTotal}`;
+                const shipping = newTotal > 1000 ? 0 : 99;
+                summaryValues[1].textContent = `₹${shipping}`;
+                const tax = Math.round(newTotal * 0.05);
+                summaryValues[2].textContent = `₹${tax}`;
+                summaryValues[3].textContent = `₹${newTotal + shipping + tax}`;
+            }
+        }
+
+        function removeItem(index) {
+            const itemCards = document.querySelectorAll('.item-card');
+            itemCards[index].classList.add('removing');
+            
+            // Wait for animation to complete
+            setTimeout(() => {
+                cart.splice(index, 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                location.reload();
+            }, 500);
+        }
+
+        // Checkout popup functionality
+        const checkoutBtn = document.querySelector('.checkout-btn');
+        const checkoutPopup = document.getElementById('checkoutPopup');
+        const closePopup = document.getElementById('closePopup');
+        const cancelCheckout = document.getElementById('cancelCheckout');
+        const confirmCheckout = document.getElementById('confirmCheckout');
+        const paymentLoading = document.getElementById('paymentLoading');
+
+        // Show popup when checkout button is clicked
+        checkoutBtn.addEventListener('click', function() {
+            checkoutPopup.classList.add('active');
+        });
+
+        // Close popup functions
+        function closeCheckoutPopup() {
+            checkoutPopup.classList.remove('active');
+        }
+
+        closePopup.addEventListener('click', closeCheckoutPopup);
+        cancelCheckout.addEventListener('click', closeCheckoutPopup);
+
+        // Show success animation after payment
+        function showSuccessAnimation() {
+            paymentLoading.innerHTML = `
+                <div class="success-checkmark">
+                    <div class="check-icon">
+                        <svg class="icon-circle" viewBox="0 0 52 52">
+                            <circle cx="26" cy="26" r="25" fill="none"/>
+                        </svg>
+                        <svg class="icon-check" viewBox="0 0 52 52">
+                            <path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                        </svg>
+                    </div>
+                </div>
+                <h2>Payment Successful!</h2>
+                <p>Thank you for your purchase.</p>
+            `;
+            
+            setTimeout(() => {
+                paymentLoading.classList.remove('active');
+                // Clear cart after successful payment
+                localStorage.setItem("cart", JSON.stringify([]));
+                // Redirect to market page
+                window.location.href = "market.html";
+            }, 3000);
+        }
+
+        // When user confirms checkout
+        confirmCheckout.addEventListener('click', function() {
+            closeCheckoutPopup();
+            paymentLoading.classList.add('active');
+            
+            // Simulate payment process
+            setTimeout(function() {
+                showSuccessAnimation();
+            }, 2000);
+        });
+
+        // Close popup if user clicks outside the content
+        checkoutPopup.addEventListener('click', function(e) {
+            if (e.target === checkoutPopup) {
+                closeCheckoutPopup();
+            }
+        });
+    </script>
+
+    <div class="payment-loading" id="paymentLoading">
+        <div class="loader"></div>
+        <h2>Processing Payment</h2>
+        <p>Please wait while we redirect you to the payment gateway...</p>
+    </div>
+</body>
+</html>

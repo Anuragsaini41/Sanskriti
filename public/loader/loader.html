@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanskriti - Loading</title>
+  <link rel="stylesheet" href="loader.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      transform: scale(1);
+      transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body.fade-out {
+      opacity: 0;
+      transform: scale(1.08); /* Slightly reduced for more natural feel */
+      transition: opacity 0.8s cubic-bezier(0.65, 0, 0.35, 1), transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Decorative corners -->
+  <div class="corner-decoration corner-top-left"></div>
+  <div class="corner-decoration corner-top-right"></div>
+  <div class="corner-decoration corner-bottom-left"></div>
+  <div class="corner-decoration corner-bottom-right"></div>
+
+  <canvas id="wave"></canvas>
+  
+  <!-- Decorative dots -->
+  <div class="decorative-dot dot-left"></div>
+  <div class="decorative-dot dot-right"></div>
+  
+  <h1>
+    <span>S</span>
+    <span>A</span>
+    <span>N</span>
+    <span>S</span>
+    <span>K</span>
+    <span>R</span>
+    <span>I</span>
+    <span>T</span>
+    <span>I</span>
+  </h1>
+  
+  <div class="tagline">Exploring Indian Heritage</div>
+  
+  <div class="loading-container">
+    <div class="loading-progress-container">
+      <div class="loading-progress" id="progress-bar"></div>
+    </div>
+    <div class="loading-text" id="loading-text">LOADING</div>
+  </div>
+  
+  <script src="particles.js"></script>
+  <script src="loader.js"></script>
+  <script>
+    // CodeHelp style smooth loading implementation
+    document.addEventListener('DOMContentLoaded', function() {
+      // Store that user has seen the loader
+      sessionStorage.setItem('loaderShown', 'true');
+      
+      // Preload important assets
+      const progressBar = document.getElementById('progress-bar');
+      const loadingText = document.getElementById('loading-text');
+      
+      // Simulate progressive loading like CodeHelp
+      let progress = 0;
+      const totalDuration = 1000; // CHANGED from 1400 to 1000ms
+      const interval = 20; // Update interval
+      const incrementPerStep = 100 / (totalDuration / interval);
+      
+      const progressInterval = setInterval(() => {
+        progress += incrementPerStep;
+        
+        // Apply easing for natural progress
+        const easedProgress = Math.min(100, easeOutQuad(progress, 0, 100, 100));
+        progressBar.style.width = easedProgress + '%';
+        
+        if (progress >= 100) {
+          clearInterval(progressInterval);
+          loadingComplete();
+        }
+      }, interval);
+      
+      // Easing function for smoother progress
+      function easeOutQuad(t, b, c, d) {
+        t /= d;
+        return -c * t * (t - 2) + b;
+      }
+      
+      // Handle completion
+      function loadingComplete() {
+        setTimeout(() => {
+          loadingText.textContent = 'READY';
+          
+          setTimeout(() => {
+            document.body.classList.add('fade-out');
+            
+            setTimeout(() => {
+              // Ensure main page is ready to receive focus
+              sessionStorage.setItem('fromLoader', 'pending');
+              document.body.style.pointerEvents = 'none'; // Prevent interaction during transition
+              
+              // Redirect with a clean, seamless transition
+              window.location.href = "/index.html";
+            }, 800);
+          }, 200);
+        }, 100);
+      }
+    });
+  </script>
+</body>
+</html>

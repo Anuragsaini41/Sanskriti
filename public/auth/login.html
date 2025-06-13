@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Sanskriti</title>
+  <link rel="stylesheet" href="./signup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome Back</h2>
+    <form id="loginForm">
+      <div class="input-field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="input-field">
+        <label for="password">Password</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+          <i class="far fa-eye-slash show-password-btn" id="togglePassword" onclick="togglePassword()"></i>
+        </div>
+      </div>
+      <div class="input-field" style="text-align: right; margin-top: -10px;">
+        <a href="#" style="font-size: 0.9rem; color: #7d5f41;">Forgot Password?</a>
+      </div>
+      <button type="submit" class="login-btn">Log In</button>
+      <p id="errorMessage" class="error-message" style="display: none;"></p>
+    </form>
+    <p class="signup-redirect">
+      Don't have an account?
+      <a href="./signup.html">Sign up</a>
+    </p>
+  </div>
+
+  <script src="./login.js"></script>
+  <script>
+    function togglePassword() {
+      const passwordField = document.getElementById("password");
+      const toggleIcon = document.getElementById("togglePassword");
+      
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleIcon.classList.remove("fa-eye-slash");
+        toggleIcon.classList.add("fa-eye");
+      } else {
+        passwordField.type = "password";
+        toggleIcon.classList.remove("fa-eye");
+        toggleIcon.classList.add("fa-eye-slash");
+      }
+    }
+  </script>
+</body>
+</html>

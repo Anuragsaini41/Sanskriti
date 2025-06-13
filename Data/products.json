@@ -1,0 +1,1565 @@
+{
+  "products": {
+    "ethnic": [
+      {
+        "name": "Men's Cotton Kurta",
+        "brand": "Ethniq",
+        "price": 999,
+        "description": "Elevate your ethnic wardrobe with this classic Men's Cotton Kurta, designed for comfort, tradition, and effortless style. Crafted from premium quality breathable cotton, this kurta ensures all-day comfort while keeping you cool and confident, even during long celebrations.\n\nWith its timeless silhouette, neat tailoring, and subtle detailing, it's ideal for festive occasions, casual gatherings, or even as everyday ethnic wear. Pair it with pyjamas, jeans, or churidars for a versatile and elegant look.\n\nWhether you're attending a wedding, a family function, or simply embracing your roots, this kurta is a perfect blend of tradition and modern flair.",
+        "rating": 4.5,
+        "reviews": 210,
+        "image": "/marketplace/products-img/men-kurta1.jpg",
+        "images": [
+          "/marketplace/products-img/men-kurta2.jpg",
+          "/marketplace/products-img/men-kurta3.jpg",
+          "/marketplace/products-img/men-kurta4.jpg"
+        ]
+      },
+      {
+        "name": "Women's Saree",
+        "brand": "Silk Route",
+        "price": 1499,
+        "description": "Drape yourself in timeless elegance with our exquisite Women's Saree, crafted to celebrate tradition with a modern twist. Made from high-quality fabric, this saree blends luxurious texture with graceful flow, offering comfort and sophistication in every pleat.\nWhether you're attending a wedding, a festive celebration, or a cultural gathering, this saree adds a touch of heritage and glamour to your ensemble. Featuring intricate patterns and rich hues, it effortlessly enhances your style and presence.\n\nPair it with statement jewelry and heels to complete a look that's both classic and captivating.",
+        "rating": 4.3,
+        "reviews": 150,
+        "image": "/marketplace/products-img/women-saree1.jpg",
+        "images": [
+          "/marketplace/products-img/women-saree2.jpg",
+          "/marketplace/products-img/women-saree3.jpg",
+          "/marketplace/products-img/women-saree4.jpg"
+        ]
+      },
+      {
+        "name": "Lehenga Choli",
+        "brand": "Rajwadi",
+        "price": 2499,
+        "description": "Make a stunning statement at every celebration with our elegant Lehenga Choli by Rajwadi. This exquisite ensemble showcases intricate embroidery and rich colors that reflect traditional artistry and contemporary fashion. Crafted from premium fabric, the lehenga offers a graceful flare while the choli is tailored for a flattering fit.\n\nPerfect for weddings, festivals, or special occasions, this outfit brings out the inner diva in you. Style it with traditional jewelry and a dupatta for a look that's regal, radiant, and unforgettable.",
+        "rating": 4.7,
+        "reviews": 320,
+        "image": "/marketplace/products-img/lehenga-choli1.jpg",
+        "images": [
+          "/marketplace/products-img/lehenga-choli2.jpg",
+          "/marketplace/products-img/lehenga-choli3.jpg",
+          "/marketplace/products-img/lehenga-choli4.jpg"
+        ]
+      },
+      {
+        "name": "Sherwani",
+        "brand": "Royal Wear",
+        "price": 3999,
+        "description": "Step into timeless sophistication with our Sherwani by Royal Wear, designed for the modern man who values tradition. Meticulously tailored from premium fabric, this sherwani features intricate embroidery, a regal silhouette, and rich detailing that exudes royalty.\n\nIdeal for weddings, receptions, or festive celebrations, it offers a perfect blend of heritage and style. Pair it with churidar pants or dhoti-style bottoms and complete the look with a stole or mojris for that royal touch.",
+        "rating": 4.8,
+        "reviews": 180,
+        "image": "/marketplace/products-img/sherwani1.jpg",
+        "images": [
+          "/marketplace/products-img/sherwani2.jpg",
+          "/marketplace/products-img/sherwani3.jpg",
+          "/marketplace/products-img/sherwani4.jpg"
+        ]
+      },
+      {
+        "name": "Anarkali Suit",
+        "brand": "Elegant",
+        "price": 2999,
+        "description": "Channel timeless grace and royal charm with our Anarkali Suit by Elegant. Inspired by Mughal-era fashion, this outfit features a beautifully flared silhouette, intricate embroidery, and luxurious fabric that flows with every step.\n\nPerfect for weddings, festive gatherings, or cultural events, the Anarkali suit effortlessly blends tradition with modern elegance. Pair it with statement earrings and embellished footwear to complete your regal look.",
+        "rating": 4.6,
+        "reviews": 250,
+        "image": "/marketplace/products-img/anarkali1.jpg",
+        "images": [
+          "/marketplace/products-img/anarkali2.jpg",
+          "/marketplace/products-img/anarkali3.jpg",
+          "/marketplace/products-img/anarkali4.jpg"
+        ]
+      },
+      {
+        "name": "Patiala Suit",
+        "brand": "Punjabi Trends",
+        "price": 1999,
+        "description": "Celebrate the colorful spirit of Punjab with our stylish Patiala Suit by Punjabi Trends. Known for its comfort and flare, this outfit features a beautifully pleated Patiala salwar paired with a matching kurti that’s adorned with eye-catching prints and embroidery.\n\nWhether it’s for a festive celebration, a cultural event, or casual wear with flair, this suit offers the perfect mix of tradition and trend. Pair it with classic juttis and bold accessories to complete your desi diva look.",
+        "rating": 4.4,
+        "reviews": 120,
+        "image": "/marketplace/products-img/patiala1.jpg",
+        "images": [
+          "/marketplace/products-img/patiala2.jpg",
+          "/marketplace/products-img/patiala3.jpg",
+          "/marketplace/products-img/patiala4.jpg"
+        ]
+      },
+      {
+        "name": "Dhoti Kurta",
+        "brand": "Traditional",
+        "price": 1299,
+        "description": "Embrace the charm of Indian tradition with our Dhoti Kurta by Traditional. This timeless ensemble features a finely stitched kurta paired with a classic dhoti, offering comfort, elegance, and heritage in every fold. Crafted from breathable, high-quality fabric, it ensures ease of movement while keeping you stylish.\n\nPerfect for festive occasions, religious ceremonies, or cultural celebrations, this outfit reflects the essence of ethnic pride. Pair it with traditional sandals and a stole for a complete ethnic look.",
+        "rating": 4.2,
+        "reviews": 90,
+        "image": "/marketplace/products-img/dhoti1.jpg",
+        "images": [
+          "/marketplace/products-img/dhoti2.jpg",
+          "/marketplace/products-img/dhoti3.jpg",
+          "/marketplace/products-img/dhoti4.jpg"
+        ]
+      },
+      {
+        "name": "Chikankari Kurta",
+        "brand": "Lucknowi",
+        "price": 1599,
+        "description": "Step into timeless elegance with our Chikankari Kurta by Lucknowi, a celebration of India’s rich hand-embroidery heritage. This kurta showcases the intricate art of Chikankari, handcrafted by skilled artisans from Lucknow, blending delicate design with modern comfort.\n\nMade with soft, breathable fabric and adorned with subtle floral patterns, it's perfect for festive gatherings, casual outings, or cultural events. Pair it with palazzos, churidars, or jeans for a look that’s effortlessly graceful and rooted in tradition.",
+        "rating": 4.5,
+        "reviews": 140,
+        "image": "/marketplace/products-img/chikankari1.jpg",
+        "images": [
+          "/marketplace/products-img/chikankari2.jpg",
+          "/marketplace/products-img/chikankari3.jpg",
+          "/marketplace/products-img/chikankari4.jpg"
+        ]
+      },
+      {
+        "name": "Banarasi Saree",
+        "brand": "Banaras Silk",
+        "price": 3499,
+        "description": "Indulge in royal elegance with our Banarasi Saree by Banaras Silk — a masterpiece of tradition and opulence. Woven with fine silk threads and adorned with intricate zari work, this saree reflects the grandeur of Varanasi's legendary craftsmanship.\n\nWith its luxurious texture, rich motifs, and timeless design, it's perfect for weddings, festive occasions, and grand celebrations. Each drape tells a story of heritage, making it not just an outfit, but a legacy. Pair it with traditional jewelry and a clutch to complete your regal look.",
+        "rating": 4.9,
+        "reviews": 300,
+        "image": "/marketplace/products-img/banarasi1.jpg",
+        "images": [
+          "/marketplace/products-img/banarasi2.jpg",
+          "/marketplace/products-img/banarasi3.jpg",
+          "/marketplace/products-img/banarasi4.jpg"
+        ]
+      },
+      {
+        "name": "Kurta Pajama Set",
+        "brand": "Ethnic Hub",
+        "price": 1799,
+        "description": "Experience the perfect blend of comfort and style with our Kurta Pajama Set by Ethnic Hub. Tailored from soft, breathable fabric, this traditional ensemble is ideal for festive gatherings, family functions, and cultural celebrations.\n\nFeaturing a classic straight-cut kurta with neat stitching and a matching pajama, this set offers a clean and elegant look. Whether you're embracing your roots or dressing up for a special event, this outfit ensures you do it with grace and ease. Pair it with mojris or traditional sandals for the complete ethnic vibe.",
+        "rating": 4.3,
+        "reviews": 110,
+        "image": "/marketplace/products-img/kurta-p1.jpg",
+        "images": [
+          "/marketplace/products-img/kurta-p2.jpg",
+          "/marketplace/products-img/kurta-p3.jpg",
+          "/marketplace/products-img/kurta-p4.jpg"
+        ]
+      }
+    ],
+    "books": [
+      {
+        "name": "Bhagavad Gita",
+        "brand": "Gita Press",
+        "price": 199,
+        "description": "Dive into the timeless wisdom of the Bhagavad Gita, one of the most revered spiritual texts in the world. Published by Gita Press, this edition offers a clear and insightful translation, making it accessible for readers of all backgrounds.\n\nWhether you are seeking spiritual guidance, philosophical insight, or a deeper understanding of life, this book provides answers to life's most profound questions. With its easy-to-read format, this edition of the Bhagavad Gita is perfect for daily reflections, meditation, or as a thoughtful gift for someone on their spiritual journey.",
+        "rating": 4.9,
+        "reviews": 1200,
+        "image": "/marketplace/products-img/geeta1.jpg",
+        "images": [
+          "/marketplace/products-img/geeta2.jpg",
+          "/marketplace/products-img/geeta3.jpg",
+          "/marketplace/products-img/geeta4.jpg"
+        ]
+      },
+      {
+        "name": "Ramayana",
+        "brand": "Valmiki",
+        "price": 299,
+        "description": "Step into the epic world of the Ramayana, a timeless masterpiece by the sage Valmiki, that narrates the heroic journey of Lord Rama. This revered text is a cornerstone of Indian literature, offering profound teachings on virtue, duty, and righteousness.\n\nWith a rich blend of mythology and moral lessons, the Ramayana provides a spiritual guide to living a life of honor and compassion. This edition is beautifully printed, making it a treasured addition to your library or an insightful gift for those seeking deeper understanding of Indian culture and spirituality.",
+        "rating": 4.8,
+        "reviews": 800,
+        "image": "/marketplace/products-img/ramayana1.jpg",
+        "images": [
+          "/marketplace/products-img/ramayana2.jpg",
+          "/marketplace/products-img/ramayana3.jpg",
+          "/marketplace/products-img/ramayana4.jpg"
+        ]
+      },
+      {
+        "name": "Mahabharata",
+        "brand": "Vyasa",
+        "price": 499,
+        "description": "Unravel the ancient wisdom of the Mahabharata, the monumental epic written by the sage Vyasa. This epic tale of duty, righteousness, and the complexities of human nature is one of the most important texts in Indian philosophy and literature.\n\nThe Mahabharata delves into themes of morality, justice, loyalty, and the consequences of war, making it a profound guide to understanding life's struggles and triumphs. This beautifully presented edition captures the essence of this epic story, offering valuable insights for readers interested in history, spirituality, and timeless teachings.",
+        "rating": 4.7,
+        "reviews": 600,
+        "image": "/marketplace/products-img/mahabharata1.jpg",
+        "images": [
+          "/marketplace/products-img/mahabharata2.jpg",
+          "/marketplace/products-img/mahabharata3.jpg",
+          "/marketplace/products-img/mahabharata4.jpg"
+        ]
+      },
+      {
+        "name": "Upanishads",
+        "brand": "Ancient Wisdom",
+        "price": 399,
+        "description": "Discover the profound teachings of the Upanishads, the ancient scriptures that form the philosophical foundation of Indian spirituality. These texts delve into the nature of reality, the self, and the universe, offering deep insights into the ultimate truth (Brahman) and the soul (Atman).\n\nWith their timeless wisdom and spiritual depth, the Upanishads have influenced not only Indian thought but also global philosophy. This edition captures the essence of these sacred texts, making them accessible for modern readers seeking enlightenment and a deeper understanding of the self.",
+        "rating": 4.6,
+        "reviews": 500,
+        "image": "/marketplace/products-img/upanishadas1.jpg",
+        "images": [
+          "/marketplace/products-img/upanishadas2.jpg",
+          "/marketplace/products-img/upanishadas3.jpg",
+          "/marketplace/products-img/upanishadas4.jpg"
+        ]
+      },
+      {
+        "name": "Vedas",
+        "brand": "Sacred Texts",
+        "price": 599,
+        "description": "Explore the spiritual and philosophical heart of India with the Vedas, the oldest and most revered texts in Hinduism. Comprising four main collections—Rigveda, Samaveda, Yajurveda, and Atharvaveda—the Vedas offer timeless wisdom on rituals, hymns, prayers, and profound philosophical teachings.\n\nThese sacred texts hold the key to understanding the ancient spiritual practices and philosophies that have shaped the foundation of Indian culture. This beautifully presented edition allows readers to connect with the eternal knowledge of the Vedas, making it an essential addition for those seeking a deeper understanding of the divine and the cosmos.",
+        "rating": 4.8,
+        "reviews": 700,
+        "image": "/marketplace/products-img/vedas1.jpg",
+        "images": [
+          "/marketplace/products-img/vedas2.jpg",
+          "/marketplace/products-img/vedas3.jpg",
+          "/marketplace/products-img/vedas4.jpg"
+        ]
+      },
+      {
+        "name": "Puranas",
+        "brand": "Mythology",
+        "price": 299,
+        "description": "Delve into the ancient stories of gods, goddesses, and legendary heroes with the Puranas, a collection of sacred texts that form an essential part of Hindu mythology. Rich with vivid narratives and profound teachings, the Puranas offer insights into cosmology, creation, moral stories, and the legends that have shaped Indian culture.\n\nThis comprehensive edition of the Puranas captures the essence of these timeless tales, providing both spiritual guidance and a deep understanding of the rich mythology that influences traditions, rituals, and festivals. Whether you're a scholar of mythology or simply seeking inspiration, this book brings the fascinating world of the Puranas into your hands.",
+        "rating": 4.5,
+        "reviews": 400,
+        "image": "/marketplace/products-img/purana1.jpg",
+        "images": [
+          "/marketplace/products-img/purana2.jpg",
+          "/marketplace/products-img/purana3.jpg",
+          "/marketplace/products-img/purana4.jpg"
+        ]
+      },
+      {
+        "name": "Yoga Sutras",
+        "brand": "Patanjali",
+        "price": 199,
+        "description": "Explore the ancient wisdom of Yoga with the Yoga Sutras by Patanjali, a foundational text for understanding the principles of Yoga, meditation, and mindfulness. This sacred text presents a profound system for mental discipline, spiritual growth, and self-awareness through the practice of Yoga.\n\nPatanjali's teachings offer deep insights into the eight limbs of Yoga, providing a step-by-step guide to living a balanced, harmonious, and enlightened life. Ideal for beginners and seasoned practitioners alike, this text is a valuable resource for anyone seeking peace, clarity, and a deeper connection with their inner self.\n\nWhether you are embarking on a yoga journey or looking to enhance your practice, the Yoga Sutras is your key to unlocking timeless wisdom and achieving holistic well-being.",
+        "rating": 4.7,
+        "reviews": 300,
+        "image": "/marketplace/products-img/ys1.jpg",
+        "images": [
+          "/marketplace/products-img/ys2.jpg",
+          "/marketplace/products-img/ys3.jpg",
+          "/marketplace/products-img/ys4.jpg"
+        ]
+      },
+      {
+        "name": "Ayurveda",
+        "brand": "Healing Science",
+        "price": 249,
+        "description": "Unlock the secrets of ancient healing with our Ayurveda guide, a comprehensive introduction to the science of life and well-being. Ayurveda, an age-old holistic system from India, emphasizes balance in the body, mind, and spirit to promote health, longevity, and vitality.\n\nThis book explores the key principles of Ayurveda, including the doshas (body types), herbal remedies, dietary guidelines, and lifestyle practices that can help restore harmony to your life. Whether you're seeking natural remedies, stress reduction techniques, or tips for improving your overall well-being, this guide offers timeless wisdom to enhance your daily routine.\n\nPerfect for those interested in natural healing, Ayurveda is a transformative approach to achieving optimal health and living in harmony with nature.",
+        "rating": 4.6,
+        "reviews": 350,
+        "image": "/marketplace/products-img/ayurveda1.jpg",
+        "images": [
+          "/marketplace/products-img/ayurveda2.jpg",
+          "/marketplace/products-img/ayurveda3.jpg",
+          "/marketplace/products-img/ayurveda4.jpg"
+        ]
+      },
+      {
+        "name": "Indian Philosophy",
+        "brand": "Wisdom Books",
+        "price": 349,
+        "description": "Embark on an enlightening journey through the rich tapestry of Indian philosophical traditions with this comprehensive guide. This book explores the major schools of Indian philosophy—from Vedanta and Yoga to Buddhism and Jainism—presenting complex ideas with clarity and depth.\n\nDelving into concepts like consciousness, reality, ethics, and the nature of self, this volume offers readers a profound understanding of India's intellectual heritage that has influenced global thought for centuries. Each chapter carefully examines the foundational texts, key thinkers, and central arguments that have shaped these philosophical systems.\n\nWhether you're a student, scholar, or spiritual seeker, this book provides valuable insights into timeless questions about existence, knowledge, and the human condition through the lens of India's ancient wisdom traditions.",
+        "rating": 4.8,
+        "reviews": 450,
+        "image": "/marketplace/products-img/ip1.jpg",
+        "images": [
+          "/marketplace/products-img/ip2.jpg",
+          "/marketplace/products-img/ip3.jpg",
+          "/marketplace/products-img/ip4.jpg"
+        ]
+            },
+      {
+        "name": "Sanskrit Grammar",
+        "brand": "Language Learning",
+        "price": 299,
+        "description": "Master the ancient language of Sanskrit with this comprehensive guide to its grammar and structure. Designed for both beginners and advanced learners, this book provides a clear and systematic approach to understanding the intricacies of Sanskrit.\n\nFrom basic sentence construction to complex grammatical rules, each chapter is filled with examples, exercises, and explanations that make learning engaging and effective. Whether you're studying for academic purposes, spiritual exploration, or personal interest, this book is an essential resource for anyone looking to delve into the beauty of Sanskrit language and literature.",
+        "rating": 4.4,
+        "reviews": 200,
+        "image": "/marketplace/products-img/sg1.jpg",
+        "images": [
+          "/marketplace/products-img/sg2.jpg",
+          "/marketplace/products-img/sg3.jpg",
+          "/marketplace/products-img/sg4.jpg"
+        ]
+      }
+    ],
+    "handicrafts": [
+      {
+        "name": "Wooden Ganesh Idol",
+        "brand": "CraftMania",
+        "price": 799,
+        "description": "Bring home the blessings of Lord Ganesh with this beautifully handcrafted Wooden Ganesh Idol. Made from high-quality wood, this idol showcases intricate carvings and vibrant colors that reflect the rich artistry of Indian craftsmanship.\n\nPerfect for your home altar or as a decorative piece, this idol not only adds a spiritual touch to your space but also serves as a stunning conversation starter. Ideal for gifting during festivals or special occasions, it embodies the essence of devotion and artistry.",
+        "rating": 4.6,
+        "reviews": 180,
+        "image": "/marketplace/products-img/w-ganesh1.jpg",
+        "images": [
+          "/marketplace/products-img/w-ganesh2.jpg",
+          "/marketplace/products-img/w-ganesh3.jpg",
+          "/marketplace/products-img/w-ganesh4.jpg"
+        ]
+      },
+      {
+        "name": "Brass Diya Set",
+        "brand": "Divine Decor",
+        "price": 599,
+        "description": "Illuminate your home with the warm glow of our Brass Diya Set, a perfect blend of tradition and elegance. Crafted from high-quality brass, this diya set features intricate designs that reflect the rich heritage of Indian craftsmanship.\n\nIdeal for festivals, poojas, or as a decorative piece, these diyas not only enhance the ambiance of your space but also symbolize prosperity and positivity. Each diya is designed to hold oil or ghee, ensuring a long-lasting and beautiful light for your celebrations.",
+        "rating": 4.4,
+        "reviews": 90,
+        "image": "/marketplace/products-img/diya1.jpg",
+        "images": [
+          "/marketplace/products-img/diya2.jpg",
+          "/marketplace/products-img/diya3.jpg",
+          "/marketplace/products-img/diya4.jpg"
+        ]
+      },
+      {
+        "name": "Terracotta Vase",
+        "brand": "ClayCraft",
+        "price": 999,
+        "description": "Add a touch of rustic charm to your home decor with our exquisite Terracotta Vase by ClayCraft. Handcrafted by skilled artisans, this vase showcases intricate designs and earthy tones that celebrate the beauty of traditional craftsmanship.\n\nPerfect for displaying fresh flowers or as a standalone decorative piece, this terracotta vase brings warmth and character to any space. Its unique design makes it an ideal gift for housewarmings, weddings, or festive occasions.",
+        "rating": 4.5,
+        "reviews": 150,
+        "image": "/marketplace/products-img/t-vase1.jpg",
+        "images": [
+          "/marketplace/products-img/t-vase2.jpg",
+          "/marketplace/products-img/t-vase3.jpg",
+          "/marketplace/products-img/t-vase4.jpg"
+        ]
+      },
+      {
+        "name": "Kalamkari Painting",
+        "brand": "Ethnic Art",
+        "price": 1299,
+        "description": "Transform your living space with the vibrant colors and intricate designs of our Kalamkari Painting by Ethnic Art. This stunning piece of art showcases the traditional Indian craft of Kalamkari, where each design is hand-painted or block-printed using natural dyes.\n\nPerfect for adorning your walls, this painting adds a touch of culture and elegance to any room. Whether you're looking to enhance your home decor or searching for a unique gift, this Kalamkari Painting is a beautiful representation of India's rich artistic heritage.",
+        "rating": 4.7,
+        "reviews": 200,
+        "image": "/marketplace/products-img/k-painting1.jpg",
+        "images": [
+          "/marketplace/products-img/k-painting2.jpg",
+          "/marketplace/products-img/k-painting3.jpg",
+          "/marketplace/products-img/k-painting4.jpg"
+        ]
+      },
+      {
+        "name": "Handwoven Basket",
+        "brand": "Village Craft",
+        "price": 499,
+        "description": "Embrace sustainable living with our Handwoven Basket by Village Craft. Made from natural fibers, this basket is not only eco-friendly but also showcases the artistry of traditional weaving techniques. Perfect for storage, organization, or as a decorative piece, it adds a touch of rustic charm to your home.\n\nWhether you're using it for groceries, laundry, or as a stylish accent in your living space, this handwoven basket is both functional and beautiful. A great gift for those who appreciate craftsmanship and sustainability.",
+        "rating": 4.3,
+        "reviews": 80,
+        "image": "/marketplace/products-img/h-basket1.jpg",
+        "images": [
+          "/marketplace/products-img/h-basket2.jpg",
+          "/marketplace/products-img/h-basket3.jpg",
+          "/marketplace/products-img/h-basket4.jpg"
+        ]
+      },
+      {
+        "name": "Brass Bell",
+        "brand": "Temple Decor",
+        "price": 399,
+        "description": "Add a touch of spirituality to your home with our Brass Bell by Temple Decor. Crafted from high-quality brass, this bell features intricate designs and a soothing sound that enhances the ambiance of any space. Perfect for poojas, meditation, or as a decorative piece, it symbolizes purity and positivity.\n\nWhether you're using it in your home altar or as a unique gift for loved ones, this brass bell is a beautiful representation of Indian craftsmanship and tradition.",
+        "rating": 4.2,
+        "reviews": 70,
+        "image": "/marketplace/products-img/bb1.jpg",
+        "images": [
+          "/marketplace/products-img/bb2.jpg",
+          "/marketplace/products-img/bb3.jpg",
+          "/marketplace/products-img/bb4.jpg"
+        ]
+      },
+      {
+        "name": "Wooden Coasters",
+        "brand": "Rustic Charm",
+        "price": 299,
+        "description": "Protect your surfaces in style with our Wooden Coasters by Rustic Charm. Handcrafted from high-quality wood, these coasters feature unique designs that add a touch of elegance to your dining or coffee table. Perfect for everyday use or special occasions, they are both functional and decorative.\n\nWhether you're serving drinks at a party or enjoying a quiet evening at home, these coasters are a must-have accessory. A thoughtful gift for housewarmings, weddings, or anyone who appreciates the beauty of natural materials.",
+        "rating": 4.1,
+        "reviews": 60,
+        "image": "/marketplace/products-img/wc1.jpg",
+        "images": [
+          "/marketplace/products-img/wc2.jpg",
+          "/marketplace/products-img/wc3.jpg",
+          "/marketplace/products-img/wc4.jpg"
+        ]
+      },
+      {
+        "name": "Handmade Jewelry Box",
+        "brand": "Artisan Creations",
+        "price": 899,
+        "description": "Store your precious jewelry in style with our Handmade Jewelry Box by Artisan Creations. Crafted from high-quality wood and adorned with intricate carvings, this box is not only functional but also a stunning piece of art. The spacious interior provides ample storage for your necklaces, earrings, and bracelets, while the elegant design adds a touch of sophistication to your dresser.\n\nPerfect for personal use or as a thoughtful gift for loved ones, this jewelry box is a beautiful representation of traditional craftsmanship and modern design.",
+        "rating": 4.8,
+        "reviews": 250,
+        "image": "/marketplace/products-img/jb1.jpg",
+        "images": [
+          "/marketplace/products-img/jb2.jpg",
+          "/marketplace/products-img/jb3.jpg",
+          "/marketplace/products-img/jb4.jpg"
+        ]
+      },
+      {
+        "name": "Brass Oil Lamp",
+        "brand": "Divine Light",
+        "price": 699,
+        "description": "Illuminate your space with the warm glow of our Brass Oil Lamp by Divine Light. Crafted from high-quality brass, this lamp features intricate designs that reflect the rich heritage of Indian craftsmanship. Perfect for poojas, festivals, or as a decorative piece, it symbolizes purity and positivity.\n\nWhether you're using it in your home altar or as a unique gift for loved ones, this brass oil lamp is a beautiful representation of tradition and spirituality. Its elegant design and soothing light create a serene ambiance in any setting.",
+        "rating": 4.5,
+        "reviews": 120,
+        "image": "/marketplace/products-img/oil-lamp1.png",
+        "images": [
+          "/marketplace/products-img/oil-lamp2.png",
+          "/marketplace/products-img/oil-lamp3.png",
+          "/marketplace/products-img/oil-lamp4.png"
+        ]
+      },
+      {
+        "name": "Terracotta Tea Set",
+        "brand": "ClayCraft",
+        "price": 1199,
+        "description": "Enjoy your tea in style with our Terracotta Tea Set by ClayCraft. Handcrafted from natural terracotta, this tea set features a unique design that enhances the flavor of your favorite brews. The earthy tones and rustic charm make it a perfect addition to your kitchen or dining table.\n\nIdeal for serving guests or enjoying a quiet cup of tea, this set includes a teapot and matching cups, making it a thoughtful gift for tea lovers. Embrace the beauty of traditional craftsmanship with this exquisite tea set that brings warmth and character to your tea time.",
+        "rating": 4.7,
+        "reviews": 300,
+        "image": "/marketplace/products-img/tea-set1.png",
+        "images": [
+          "/marketplace/products-img/tea-set2.png",
+          "/marketplace/products-img/tea-set3.png",
+          "/marketplace/products-img/tea-set4.png"
+        ]
+      }
+    ],
+    "spiritual": [
+      {
+        "name": "Brass Puja Thali",
+        "brand": "Divine Decor",
+        "price": 599,
+        "description": "Enhance your spiritual rituals with our Brass Puja Thali by Divine Decor. Crafted from high-quality brass, this thali features intricate designs and a polished finish that adds elegance to your pooja setup. Perfect for holding all your puja essentials, it symbolizes purity and devotion.\n\nWhether you're using it for daily prayers or special occasions, this puja thali is a beautiful representation of tradition and spirituality. Its spacious design allows you to arrange your offerings with ease, making it an essential item for every home.",
+        "rating": 4.7,
+        "reviews": 150,
+        "image": "/marketplace/products-img/pt1.jpg",
+        "images": [
+          "/marketplace/products-img/pt2.jpg",
+          "/marketplace/products-img/pt3.jpg",
+          "/marketplace/products-img/pt4.jpg"
+        ]
+      },
+      {
+        "name": "Incense Sticks",
+        "brand": "Aroma Bliss",
+        "price": 199,
+        "description": "Create a serene atmosphere with our Incense Sticks by Aroma Bliss. Made from natural ingredients and infused with soothing fragrances, these incense sticks are perfect for meditation, relaxation, or enhancing the ambiance of your home.\n\nEach stick burns slowly, releasing a calming aroma that helps to purify the air and uplift your spirits. Ideal for daily use or special occasions, these incense sticks are a wonderful addition to your spiritual practice or home decor.",
+        "rating": 4.5,
+        "reviews": 300,
+        "image": "/marketplace/products-img/ls1.jpg",
+        "images": [
+          "/marketplace/products-img/ls2.jpg",
+          "/marketplace/products-img/ls3.jpg",
+          "/marketplace/products-img/ls4.jpg"
+        ]
+      },
+      {
+        "name": "Copper Kalash",
+        "brand": "Temple Essentials",
+        "price": 499,
+        "description": "Embrace tradition with our Copper Kalash by Temple Essentials. This beautifully crafted kalash is made from high-quality copper, symbolizing purity and abundance. Perfect for poojas, festivals, or as a decorative piece, it adds a touch of elegance to your spiritual rituals.\n\nThe kalash can be filled with water, flowers, or grains, making it an essential item for various religious ceremonies. Its intricate design and polished finish make it a stunning addition to your home altar or a thoughtful gift for loved ones.",
+        "rating": 4.6,
+        "reviews": 120,
+        "image": "/marketplace/products-img/ck1.jpg",
+        "images": [
+          "/marketplace/products-img/ck2.jpg",
+          "/marketplace/products-img/ck3.jpg",
+          "/marketplace/products-img/ck4.jpg"
+        ]
+      },
+      {
+        "name": "Rudraksha Mala",
+        "brand": "Sacred Beads",
+        "price": 999,
+        "description": "Connect with your spiritual self with our Rudraksha Mala by Sacred Beads. Made from natural Rudraksha seeds, this mala is traditionally used for meditation and prayer. Each bead is unique, symbolizing the essence of spirituality and devotion.\n\nWearing or using this mala during meditation helps to enhance focus, calm the mind, and promote inner peace. Its beautiful design and natural texture make it a perfect accessory for both spiritual practices and daily wear.",
+        "rating": 4.8,
+        "reviews": 200,
+        "image": "/marketplace/products-img/rm1.jpg",
+        "images": [
+          "/marketplace/products-img/rm2.jpg",
+          "/marketplace/products-img/rm3.jpg",
+          "/marketplace/products-img/rm4.jpg"
+        ]
+      },
+      {
+        "name": "Brass Bell",
+        "brand": "Temple Decor",
+        "price": 399,
+        "description": "Add a touch of spirituality to your home with our Brass Bell by Temple Decor. Crafted from high-quality brass, this bell features intricate designs and a soothing sound that enhances the ambiance of any space. Perfect for poojas, meditation, or as a decorative piece, it symbolizes purity and positivity.\n\nWhether you're using it in your home altar or as a unique gift for loved ones, this brass bell is a beautiful representation of Indian craftsmanship and tradition.",
+        "rating": 4.4,
+        "reviews": 80,
+        "image": "/marketplace/products-img/bb1.jpg",
+        "images": [
+          "/marketplace/products-img/bb2.jpg",
+          "/marketplace/products-img/bb3.jpg",
+          "/marketplace/products-img/bb4.jpg"
+        ]
+      },
+      {
+        "name": "Puja Oil Lamp",
+        "brand": "Divine Light",
+        "price": 699,
+        "description": "Illuminate your spiritual space with our Puja Oil Lamp by Divine Light. Crafted from high-quality brass, this lamp features intricate designs that reflect the rich heritage of Indian craftsmanship. Perfect for poojas, festivals, or as a decorative piece, it symbolizes purity and positivity.\n\nWhether you're using it in your home altar or as a unique gift for loved ones, this puja oil lamp is a beautiful representation of tradition and spirituality. Its elegant design and soothing light create a serene ambiance in any setting.",
+        "rating": 4.7,
+        "reviews": 150,
+        "image": "/marketplace/products-img/diya1.jpg",
+        "images": [
+          "/marketplace/products-img/diya2.jpg",
+          "/marketplace/products-img/diya3.jpg",
+          "/marketplace/products-img/diya4.jpg"
+        ]
+      },
+      {
+        "name": "Chandan Powder",
+        "brand": "Aroma Bliss",
+        "price": 299,
+        "description": "Experience the soothing aroma of our Chandan Powder by Aroma Bliss. Made from pure sandalwood, this powder is traditionally used in poojas, rituals, and for creating a calming atmosphere in your home. Its natural fragrance promotes relaxation and enhances meditation practices.\n\nPerfect for daily use or special occasions, this Chandan Powder can be used for making incense, applying on the skin, or as a fragrant addition to your spiritual rituals. Its rich aroma and therapeutic properties make it a must-have for anyone seeking tranquility and peace.",
+        "rating": 4.3,
+        "reviews": 100,
+        "image": "/marketplace/products-img/cp1.jpg",
+        "images": [
+          "/marketplace/products-img/cp2.jpg",
+          "/marketplace/products-img/cp3.jpg",
+          "/marketplace/products-img/cp4.jpg"
+        ]
+      },
+      {
+        "name": "Puja Samagri Kit",
+        "brand": "Temple Essentials",
+        "price": 1299,
+        "description": "Simplify your spiritual rituals with our Puja Samagri Kit by Temple Essentials. This comprehensive kit includes all the essential items needed for performing poojas, making it perfect for festivals, special occasions, or daily prayers. Each item is carefully selected to ensure a complete and fulfilling spiritual experience.\n\nFrom incense sticks and camphor to sacred threads and pooja thalis, this kit has everything you need to create a serene and auspicious atmosphere. Ideal for both beginners and seasoned practitioners, this Puja Samagri Kit is a thoughtful gift for anyone looking to enhance their spiritual practice.",
+        "rating": 4.9,
+        "reviews": 250,
+        "image": "/marketplace/products-img/ps1.jpg",
+        "images": [
+          "/marketplace/products-img/ps2.jpg",
+          "/marketplace/products-img/ps3.jpg",
+          "/marketplace/products-img/ps4.jpg"
+        ]
+      },
+      {
+        "name": "Tulsi Mala",
+        "brand": "Sacred Beads",
+        "price": 499,
+        "description": "Connect with your spiritual self with our Tulsi Mala by Sacred Beads. Made from sacred Tulsi wood, this mala is traditionally used for meditation and prayer. Each bead is unique, symbolizing the essence of spirituality and devotion.\n\nWearing or using this mala during meditation helps to enhance focus, calm the mind, and promote inner peace. Its beautiful design and natural texture make it a perfect accessory for both spiritual practices and daily wear.",
+        "rating": 4.5,
+        "reviews": 140,
+        "image": "/marketplace/products-img/tm1.jpg",
+        "images": [
+          "/marketplace/products-img/tm2.jpg",
+          "/marketplace/products-img/tm3.jpg",
+          "/marketplace/products-img/tm4.jpg"
+        ]
+      },
+      {
+        "name": "Brass Diya Set",
+        "brand": "Divine Decor",
+        "price": 599,
+        "description": "Illuminate your home with the warm glow of our Brass Diya Set, a perfect blend of tradition and elegance. Crafted from high-quality brass, this diya set features intricate designs that reflect the rich heritage of Indian craftsmanship.\n\nIdeal for festivals, poojas, or as a decorative piece, these diyas not only enhance the ambiance of your space but also symbolize prosperity and positivity. Each diya is designed to hold oil or ghee, ensuring a long-lasting and beautiful light for your celebrations.",
+        "rating": 4.6,
+        "reviews": 180,
+        "image": "/marketplace/products-img/bds1.jpg",
+        "images": [
+          "/marketplace/products-img/bds2.jpg",
+          "/marketplace/products-img/bds3.jpg",
+          "/marketplace/products-img/bds4.jpg"
+        ]
+      }
+    ],
+    "festive": [
+      {
+        "name": "Diwali Lights",
+        "brand": "Festive Glow",
+        "price": 499,
+        "description": "Illuminate your home this Diwali with our stunning Diwali Lights by Festive Glow. These vibrant and colorful lights create a warm and inviting atmosphere, perfect for celebrating the festival of lights. Whether you're decorating your home or setting the mood for a festive gathering, these lights add a magical touch to any space.\n\nEasy to install and energy-efficient, our Diwali Lights are designed to last, making them a perfect addition to your festive decor. Ideal for both indoor and outdoor use, they are a must-have for creating a joyful and celebratory ambiance during the festive season.",
+        "rating": 4.7,
+        "reviews": 300,
+        "image": "/marketplace/products-img/dl1.jpg",
+        "images": [
+          "/marketplace/products-img/dl2.jpg",
+          "/marketplace/products-img/dl3.jpg",
+          "/marketplace/products-img/dl4.jpg"
+        ]
+      },
+      {
+        "name": "Rangoli Colors",
+        "brand": "Color Fiesta",
+        "price": 199,
+        "description": "Bring color and vibrancy to your home this festive season with our Rangoli Colors by Color Fiesta. These high-quality colors are perfect for creating stunning rangoli designs that enhance the beauty of your home during festivals. Available in a variety of shades, they are easy to use and safe for both indoor and outdoor applications.\n\nWhether you're decorating for Diwali, Pongal, or any other festival, our Rangoli Colors will help you create beautiful patterns that reflect your creativity and festive spirit. Ideal for both beginners and experienced artists, these colors are a must-have for your festive celebrations.",
+        "rating": 4.5,
+        "reviews": 150,
+        "image": "/marketplace/products-img/rc1.jpg",
+        "images": [
+          "/marketplace/products-img/rc2.jpg",
+          "/marketplace/products-img/rc3.jpg",
+          "/marketplace/products-img/rc4.jpg"
+        ]
+      },
+      {
+        "name": "Decorative Diyas",
+        "brand": "Divine Decor",
+        "price": 299,
+        "description": "Add a touch of elegance to your Diwali celebrations with our Decorative Diyas by Divine Decor. These beautifully crafted diyas are made from high-quality materials and feature intricate designs that reflect the rich heritage of Indian craftsmanship. Perfect for lighting up your home during festivals, these diyas create a warm and inviting atmosphere.\n\nWhether you're using them for poojas or as decorative pieces, our Decorative Diyas are a must-have for your festive decor. Their unique designs make them ideal for gifting during the festive season, spreading joy and positivity.",
+        "rating": 4.6,
+        "reviews": 200,
+        "image": "/marketplace/products-img/dd1.jpg",
+        "images": [
+          "/marketplace/products-img/dd2.jpg",
+          "/marketplace/products-img/dd3.jpg",
+          "/marketplace/products-img/dd4.jpg"
+        ]
+      },
+      {
+        "name": "Festive Toran",
+        "brand": "Ethnic Art",
+        "price": 399,
+        "description": "Welcome guests with our beautiful Festive Toran by Ethnic Art. This traditional door hanging is handcrafted with vibrant colors and intricate designs, making it a perfect addition to your home decor during festivals. Made from high-quality materials, this toran adds a touch of elegance and festivity to your entrance.\n\nIdeal for Diwali, Navratri, or any other celebration, our Festive Toran is easy to hang and adds a warm and inviting ambiance to your home. A thoughtful gift for housewarmings or festive occasions, it symbolizes prosperity and good fortune.",
+        "rating": 4.8,
+        "reviews": 180,
+        "image": "/marketplace/products-img/ft1.jpg",
+        "images": [
+          "/marketplace/products-img/ft2.jpg",
+          "/marketplace/products-img/ft3.jpg",
+          "/marketplace/products-img/ft4.jpg"
+        ]
+      },
+      {
+        "name": "Pooja Thali Set",
+        "brand": "Temple Essentials",
+        "price": 599,
+        "description": "Enhance your spiritual rituals with our Pooja Thali Set by Temple Essentials. This beautifully crafted set includes a thali, diya, and other essential items needed for performing poojas. Made from high-quality materials, it features intricate designs that reflect the rich heritage of Indian craftsmanship.\n\nPerfect for festivals, special occasions, or daily prayers, this Pooja Thali Set is a beautiful representation of tradition and spirituality. Its spacious design allows you to arrange your offerings with ease, making it an essential item for every home.",
+        "rating": 4.9,
+        "reviews": 250,
+        "image": "/marketplace/products-img/pts1.jpg",
+        "images": [
+          "/marketplace/products-img/pts2.jpg",
+          "/marketplace/products-img/pts3.jpg",
+          "/marketplace/products-img/pts4.jpg"
+        ]
+      },
+      {
+        "name": "Fairy String Lights",
+        "brand": "Glow Decor",
+        "price": 349,
+        "description": "Create a magical ambiance with our Fairy String Lights by Glow Decor. These enchanting lights are perfect for decorating your home during festivals, parties, or any special occasion. With their warm glow and flexible design, they can be easily draped around furniture, walls, or outdoor spaces to add a touch of whimsy and charm.\n\nEnergy-efficient and easy to install, our Fairy String Lights are a must-have for anyone looking to enhance their festive decor. Ideal for both indoor and outdoor use, they create a cozy and inviting atmosphere that will delight your guests.",
+        "rating": 4.7,
+        "reviews": 220,
+        "image": "/marketplace/products-img/fsl1.jpg",
+        "images": [
+          "/marketplace/products-img/fsl2.jpg",
+          "/marketplace/products-img/fsl3.jpg",
+          "/marketplace/products-img/fsl4.jpg"
+        ]
+      },
+      {
+        "name": "Ganesh Lakshmi Idols",
+        "brand": "Divine Sculptures",
+        "price": 999,
+        "description": "Bring home the blessings of prosperity and success with our Ganesh Lakshmi Idols by Divine Sculptures. These beautifully crafted idols are made from high-quality materials and feature intricate designs that reflect the rich heritage of Indian craftsmanship. Perfect for your home altar or as a decorative piece, they symbolize abundance and good fortune.\n\nIdeal for gifting during festivals or special occasions, our Ganesh Lakshmi Idols are a beautiful representation of devotion and artistry. Their elegant design adds a touch of spirituality to any space, making them a must-have for your festive decor.",
+        "rating": 4.8,
+        "reviews": 300,
+        "image": "/marketplace/products-img/gli1.jpg",
+        "images": [
+          "/marketplace/products-img/gli2.jpg",
+          "/marketplace/products-img/gli3.jpg",
+          "/marketplace/products-img/gli4.jpg"
+        ]
+      },
+      {
+        "name": "Festive Candles",
+        "brand": "Aroma Bliss",
+        "price": 249,
+        "description": "Create a warm and inviting atmosphere with our Festive Candles by Aroma Bliss. These beautifully scented candles are perfect for enhancing the ambiance of your home during festivals, celebrations, or cozy evenings. Made from high-quality wax and infused with delightful fragrances, they burn evenly and fill your space with soothing aromas.\n\nIdeal for gifting or personal use, our Festive Candles are a must-have for anyone looking to add a touch of elegance and warmth to their home decor. Their charming designs make them perfect for any occasion, creating a serene and festive atmosphere.",
+        "rating": 4.4,
+        "reviews": 120,
+        "image": "/marketplace/products-img/fc1.jpg",
+        "images": [
+          "/marketplace/products-img/fc2.jpg",
+          "/marketplace/products-img/fc3.jpg",
+          "/marketplace/products-img/fc4.jpg"
+        ]
+      },
+      {
+        "name": "Wall Hangings",
+        "brand": "Ethnic Charm",
+        "price": 799,
+        "description": "Beautify your walls with Ethnic Charm's Wall Hangings. These traditional, yet elegant hangings feature intricate designs and vibrant colors that will add a festive touch to your home. They are ideal for Diwali, creating an inviting and warm atmosphere in your living room or entrance.",
+        "rating": 4.6,
+        "reviews": 200,
+        "image": "/marketplace/products-img/wh1.jpg",
+        "images": [
+          "/marketplace/products-img/wh2.jpg",
+          "/marketplace/products-img/wh3.jpg",
+          "/marketplace/products-img/wh4.jpg"
+        ]
+      },
+      {
+        "name": "Festive Gift Box",
+        "brand": "Gift Bliss",
+        "price": 1499,
+        "description": "Surprise your loved ones with our Festive Gift Box by Gift Bliss. This beautifully curated box includes a selection of traditional sweets, decorative items, and festive essentials that make for the perfect gift during celebrations. Each item is carefully chosen to reflect the spirit of the festival, making it a thoughtful and delightful present.",
+        "rating": 4.9,
+        "reviews": 350,
+        "image": "/marketplace/products-img/fgb1.jpg",
+        "images": [
+          "/marketplace/products-img/fgb2.jpg",
+          "/marketplace/products-img/fgb3.jpg",
+          "/marketplace/products-img/fgb4.jpg"
+        ]
+      }
+    ],
+    "traditional-jewelry": [
+      {
+        "name": "Gold Plated Necklace",
+        "brand": "Royal Jewels",
+        "price": 1999,
+        "description": "Adorn yourself with our exquisite Gold Plated Necklace by Royal Jewels. This stunning piece features intricate designs and high-quality craftsmanship, making it a perfect accessory for weddings, festivals, or special occasions. The gold plating adds a touch of elegance and sophistication, ensuring you stand out in any crowd.\n\nWhether you're dressing up for a party or looking for the perfect gift for a loved one, this necklace is a timeless addition to any jewelry collection. Its versatile design allows it to be paired with various outfits, making it a must-have accessory.",
+        "rating": 4.8,
+        "reviews": 250,
+        "image": "/marketplace/products-img/gpn1.jpg",
+        "images": [
+          "/marketplace/products-img/gpn2.jpg",
+          "/marketplace/products-img/gpn3.jpg",
+          "/marketplace/products-img/gpn4.jpg"
+        ]
+      },
+      {
+        "name": "Kundan Choker Set",
+        "brand": "Ethnic Shine",
+        "price": 1499,
+        "description": "Make a statement with our Kundan Choker Set by Ethnic Shine. This stunning jewelry set features intricate Kundan work, showcasing the rich heritage of Indian craftsmanship. Perfect for weddings, festivals, or special occasions, this choker set adds a touch of elegance and glamour to any outfit.\n\nThe combination of traditional design and modern aesthetics makes it a versatile accessory that can be paired with various outfits. Whether you're dressing up for a party or looking for the perfect gift for a loved one, this Kundan Choker Set is a must-have addition to your jewelry collection.",
+        "rating": 4.7,
+        "reviews": 180,
+        "image": "/marketplace/products-img/kcs1.jpg",
+        "images": [
+          "/marketplace/products-img/kcs2.jpg",
+          "/marketplace/products-img/kcs3.jpg",
+          "/marketplace/products-img/kcs4.jpg"
+        ]
+      },
+      {
+        "name": "Temple Jewelry Earrings",
+        "brand": "Divine Creations",
+        "price": 899,
+        "description": "Add a touch of tradition to your look with our Temple Jewelry Earrings by Divine Creations. These beautifully crafted earrings feature intricate designs inspired by ancient Indian art, making them a perfect accessory for weddings, festivals, or special occasions. The combination of gold plating and traditional motifs adds a unique charm to these earrings.\n\nWhether you're dressing up for a party or looking for the perfect gift for a loved one, these Temple Jewelry Earrings are a timeless addition to any jewelry collection. Their versatile design allows them to be paired with various outfits, making them a must-have accessory.",
+        "rating": 4.6,
+        "reviews": 200,
+        "image": "/marketplace/products-img/tje1.jpg",
+        "images": [
+          "/marketplace/products-img/tje2.jpg",
+          "/marketplace/products-img/tje3.jpg",
+          "/marketplace/products-img/tje4.jpg"
+        ]
+      },
+      {
+        "name": "Antique Bangles",
+        "brand": "Heritage Gold",
+        "price": 1299,
+        "description": "Embrace the beauty of tradition with our Antique Bangles by Heritage Gold. These stunning bangles feature intricate designs and high-quality craftsmanship, making them a perfect accessory for weddings, festivals, or special occasions. The antique finish adds a touch of elegance and sophistication, ensuring you stand out in any crowd.\n\nWhether you're dressing up for a party or looking for the perfect gift for a loved one, these Antique Bangles are a timeless addition to any jewelry collection. Their versatile design allows them to be paired with various outfits, making them a must-have accessory.",
+        "rating": 4.5,
+        "reviews": 150,
+        "image": "/marketplace/products-img/ab1.jpg",
+        "images": [
+          "/marketplace/products-img/ab2.jpg",
+          "/marketplace/products-img/ab3.jpg",
+          "/marketplace/products-img/ab4.jpg"
+        ]
+      },
+      {
+        "name": "Pearl Necklace Set",
+        "brand": "Elegant Pearls",
+        "price": 999,
+        "description": "Elevate your style with our Pearl Necklace Set by Elegant Pearls. This stunning jewelry set features high-quality pearls and intricate designs, making it a perfect accessory for weddings, festivals, or special occasions. The timeless elegance of pearls adds a touch of sophistication to any outfit.\n\nWhether you're dressing up for a party or looking for the perfect gift for a loved one, this Pearl Necklace Set is a must-have addition to your jewelry collection. Its versatile design allows it to be paired with various outfits, making it a timeless accessory.",
+        "rating": 4.4,
+        "reviews": 120,
+        "image": "/marketplace/products-img/pns1.jpg",
+        "images": [
+          "/marketplace/products-img/pns2.jpg",
+          "/marketplace/products-img/pns3.jpg",
+          "/marketplace/products-img/pns4.jpg"
+        ]
+      },
+      {
+        "name": "Oxidized Silver Anklets",
+        "brand": "Rustic Charm",
+        "price": 499,
+        "description": "Add a touch of bohemian elegance to your look with our Oxidized Silver Anklets by Rustic Charm. These beautifully crafted anklets feature intricate designs and high-quality craftsmanship, making them a perfect accessory for casual outings, festivals, or special occasions. The oxidized silver finish adds a unique charm to these anklets.\n\nWhether you're dressing up for a party or looking for the perfect gift for a loved one, these Oxidized Silver Anklets are a timeless addition to any jewelry collection. Their versatile design allows them to be paired with various outfits, making them a must-have accessory.",
+        "rating": 4.3,
+        "reviews": 100,
+        "image": "/marketplace/products-img/osa1.jpg",
+        "images": [
+          "/marketplace/products-img/osa2.jpg",
+          "/marketplace/products-img/osa3.jpg",
+          "/marketplace/products-img/osa4.jpg"
+        ]
+      },
+      {
+        "name": "Maang Tikka",
+        "brand": "Bridal Bliss",
+        "price": 399,
+        "description": "Complete your bridal look with our stunning Maang Tikka by Bridal Bliss. This beautifully crafted piece features intricate designs and high-quality craftsmanship, making it a perfect accessory for weddings, festivals, or special occasions. The combination of traditional motifs and modern aesthetics adds a unique charm to this maang tikka.\n\nWhether you're dressing up for your wedding or looking for the perfect gift for a loved one, this Maang Tikka is a timeless addition to any jewelry collection. Its versatile design allows it to be paired with various outfits, making it a must-have accessory.",
+        "rating": 4.2,
+        "reviews": 80,
+        "image": "/marketplace/products-img/mt1.jpg",
+        "images": [
+          "/marketplace/products-img/mt2.jpg",
+          "/marketplace/products-img/mt3.jpg",
+          "/marketplace/products-img/mt4.jpg"
+        ]
+      },
+      {
+        "name": "Gold Plated Bracelet",
+        "brand": "Golden Glow",
+        "price": 799,
+        "description": "Adorn your wrist with our exquisite Gold Plated Bracelet by Golden Glow. This stunning piece features intricate designs and high-quality craftsmanship, making it a perfect accessory for weddings, festivals, or special occasions. The gold plating adds a touch of elegance and sophistication, ensuring you stand out in any crowd.\n\nWhether you're dressing up for a party or looking for the perfect gift for a loved one, this bracelet is a timeless addition to any jewelry collection. Its versatile design allows it to be paired with various outfits, making it a must-have accessory.",
+        "rating": 4.6,
+        "reviews": 140,
+        "image": "/marketplace/products-img/gpb1.jpg",
+        "images": [
+          "/marketplace/products-img/gpb2.jpg",
+          "/marketplace/products-img/gpb3.jpg",
+          "/marketplace/products-img/gpb4.jpg"
+        ]
+      },
+      {
+        "name": "Traditional Nose Ring",
+        "brand": "Ethnic Elegance",
+        "price": 299,
+        "description": "The Traditional Nose Ring from Ethnic Elegance is a must-have accessory for brides and women who appreciate classic, ethnic designs. It is made of high-quality metal and adorned with beautiful embellishments.",
+        "rating": 4.1,
+        "reviews": 60,
+        "image": "/marketplace/products-img/tnr1.jpg",
+        "images": [
+          "/marketplace/products-img/tnr2.jpg",
+          "/marketplace/products-img/tnr3.jpg",
+          "/marketplace/products-img/tnr4.jpg"
+        ]
+      },
+      {
+        "name": "Polki Jewelry Set",
+        "brand": "Royal Heritage",
+        "price": 2499,
+        "description": "Make a statement with our Polki Jewelry Set by Royal Heritage. This stunning set features intricate Polki work, showcasing the rich heritage of Indian craftsmanship. Perfect for weddings, festivals, or special occasions, this jewelry set adds a touch of elegance and glamour to any outfit.\n\nThe combination of traditional design and modern aesthetics makes it a versatile accessory that can be paired with various outfits. Whether you're dressing up for a party or looking for the perfect gift for a loved one, this Polki Jewelry Set is a must-have addition to your jewelry collection.",
+        "rating": 4.9,
+        "reviews": 300,
+        "image": "/marketplace/products-img/pjs1.jpg",
+        "images": [
+          "/marketplace/products-img/pjs2.jpg",
+          "/marketplace/products-img/pjs3.jpg",
+          "/marketplace/products-img/pjs4.jpg"
+        ]
+      }
+    ],
+    "snacks": [
+      {
+        "name": "Kaju Katli",
+        "brand": "Sweet Treats",
+        "price": 599,
+        "description": "Indulge in the rich and creamy taste of Kaju Katli by Sweet Treats. Made from premium cashews, this traditional Indian sweet is a perfect blend of sweetness and texture. Each piece is delicately crafted to ensure a melt-in-your-mouth experience, making it an ideal treat for festivals, celebrations, or as a delightful gift.\n\nWhether you're enjoying it yourself or sharing it with loved ones, our Kaju Katli is sure to impress with its authentic flavor and beautiful presentation. Packaged in an elegant box, it's a perfect choice for gifting during special occasions.",
+        "rating": 4.9,
+        "reviews": 400,
+        "image": "/marketplace/products-img/kk1.jpg",
+        "images": [
+          "/marketplace/products-img/kk2.jpg",
+          "/marketplace/products-img/kk3.jpg",
+          "/marketplace/products-img/kk4.jpg"
+        ]
+      },
+      {
+        "name": "Rasgulla",
+        "brand": "Bengal Sweets",
+        "price": 299,
+        "description": "Savor the sweetness of Rasgulla by Bengal Sweets. These soft and spongy balls made from chhena (Indian cottage cheese) are soaked in sugar syrup, creating a delightful dessert that melts in your mouth. Perfect for festivals, celebrations, or as a sweet treat any time of the day, Rasgulla is a beloved classic in Indian sweets.\n\nPackaged in an attractive container, our Rasgulla is not only delicious but also makes for a great gift for friends and family. Enjoy the authentic taste of Bengal with every bite.",
+        "rating": 4.8,
+        "reviews": 300,
+        "image": "/marketplace/products-img/r1.jpg",
+        "images": [
+          "/marketplace/products-img/r2.jpg",
+          "/marketplace/products-img/r3.jpg",
+          "/marketplace/products-img/r4.jpg"
+        ]
+      },
+      {
+        "name": "Soan Papdi",
+        "brand": "Haldiram's",
+        "price": 199,
+        "description": "Experience the flaky and melt-in-your-mouth goodness of Soan Papdi by Haldiram's. This traditional Indian sweet is made from gram flour and sugar, creating a unique texture that is both light and delicious. Perfect for festivals, celebrations, or as a delightful snack, Soan Papdi is a favorite among sweet lovers.",
+        "rating": 4.6,
+        "reviews": 250,
+        "image": "/marketplace/products-img/sp1.jpg",
+        "images": [
+          "/marketplace/products-img/sp2.jpg",
+          "/marketplace/products-img/sp3.jpg",
+          "/marketplace/products-img/sp4.jpg"
+        ]
+      },
+      {
+        "name": "Besan Ladoo",
+        "brand": "Sweet Treats",
+        "price": 399,
+        "description": "Indulge in the rich and nutty flavor of Besan Ladoo by Sweet Treats. Made from roasted gram flour, ghee, and sugar, these round sweets are a perfect blend of taste and texture. Each bite offers a delightful crunch, making it an ideal treat for festivals, celebrations, or as a sweet snack any time of the day.\n\nPackaged in an attractive box, our Besan Ladoo is not only delicious but also makes for a great gift for friends and family. Enjoy the authentic taste of Indian sweets with every bite.",
+        "rating": 4.7,
+        "reviews": 200,
+        "image": "/marketplace/products-img/bl1.jpg",
+        "images": [
+          "/marketplace/products-img/bl2.jpg",
+          "/marketplace/products-img/bl3.jpg",
+          "/marketplace/products-img/bl4.jpg"
+        ]
+      },
+      {
+        "name": "Peda",
+        "brand": "Mathura Sweets",
+        "price": 299,
+        "description": "Savor the rich and creamy taste of Peda by Mathura Sweets. Made from khoya (milk solids) and flavored with cardamom, this traditional Indian sweet is a perfect blend of sweetness and texture. Each piece is delicately crafted to ensure a melt-in-your-mouth experience, making it an ideal treat for festivals, celebrations, or as a delightful gift.\n\nWhether you're enjoying it yourself or sharing it with loved ones, our Peda is sure to impress with its authentic flavor and beautiful presentation. Packaged in an elegant box, it's a perfect choice for gifting during special occasions.",
+        "rating": 4.5,
+        "reviews": 180,
+        "image": "/marketplace/products-img/p1.jpg",
+        "images": [
+          "/marketplace/products-img/p2.jpg",
+          "/marketplace/products-img/p3.jpg",
+          "/marketplace/products-img/p4.jpg"
+        ]
+      },
+      {
+        "name": "Jalebi",
+        "brand": "Sweet Treats",
+        "price": 199,
+        "description": "Indulge in the crispy and syrupy goodness of Jalebi by Sweet Treats. This traditional Indian sweet is made from fermented batter, deep-fried into spiral shapes, and soaked in sugar syrup, creating a delightful dessert that is both crunchy and sweet. Perfect for festivals, celebrations, or as a sweet treat any time of the day, Jalebi is a beloved classic in Indian sweets.\n\nPackaged in an attractive container, our Jalebi is not only delicious but also makes for a great gift for friends and family. Enjoy the authentic taste of India with every bite.",
+        "rating": 4.4,
+        "reviews": 150,
+        "image": "/marketplace/products-img/j1.jpg",
+        "images": [
+          "/marketplace/products-img/j2.jpg",
+          "/marketplace/products-img/j3.jpg",
+          "/marketplace/products-img/j4.jpg"
+        ]
+      },
+      {
+        "name": "Gulab Jamun",
+        "brand": "Bengal Sweets",
+        "price": 299,
+        "description": "Savor the sweetness of Gulab Jamun by Bengal Sweets. These soft and spongy balls made from khoya (milk solids) are soaked in sugar syrup, creating a delightful dessert that melts in your mouth. Perfect for festivals, celebrations, or as a sweet treat any time of the day, Gulab Jamun is a beloved classic in Indian sweets.\n\nPackaged in an attractive container, our Gulab Jamun is not only delicious but also makes for a great gift for friends and family. Enjoy the authentic taste of India with every bite.",
+        "rating": 4.8,
+        "reviews": 300,
+        "image": "/marketplace/products-img/gj1.jpg",
+        "images": [
+          "/marketplace/products-img/gj2.jpg",
+          "/marketplace/products-img/gj3.jpg",
+          "/marketplace/products-img/gj4.jpg"
+        ]
+      },
+      {
+        "name": "Chikki",
+        "brand": "Lonavala Special",
+        "price": 149,
+        "description": "Enjoy the crunchy and nutty flavor of Chikki by Lonavala Special. Made from roasted nuts and jaggery, this traditional Indian sweet is a perfect blend of taste and health. Each piece offers a delightful crunch, making it an ideal treat for festivals, celebrations, or as a healthy snack any time of the day.\n\nPackaged in an attractive box, our Chikki is not only delicious but also makes for a great gift for friends and family. Enjoy the authentic taste of Indian sweets with every bite.",
+        "rating": 4.3,
+        "reviews": 120,
+        "image": "/marketplace/products-img/c1.jpg",
+        "images": [
+          "/marketplace/products-img/c2.jpg",
+          "/marketplace/products-img/c3.jpg",
+          "/marketplace/products-img/c4.jpg"
+        ]
+      },
+      {
+        "name": "Namkeen Mixture",
+        "brand": "Haldiram's",
+        "price": 199,
+        "description": "Satisfy your cravings with our Namkeen Mixture by Haldiram's. This delicious blend of crispy snacks, nuts, and spices is perfect for munching during festivals, gatherings, or as a delightful snack any time of the day. Each bite offers a burst of flavor and crunch, making it a favorite among snack lovers.\n\nPackaged in an attractive container, our Namkeen Mixture is not only tasty but also makes for a great gift for friends and family. Enjoy the authentic taste of Indian snacks with every bite.",
+        "rating": 4.5,
+        "reviews": 200,
+        "image": "/marketplace/products-img/nm1.jpg",
+        "images": [
+          "/marketplace/products-img/nm2.jpg",
+          "/marketplace/products-img/nm3.jpg",
+          "/marketplace/products-img/nm4.jpg"
+        ]
+      },
+      {
+        "name": "Murukku",
+        "brand": "South Indian Snacks",
+        "price": 249,
+        "description": "Indulge in the crispy and savory goodness of Murukku by South Indian Snacks. This traditional Indian snack is made from rice flour and lentil flour, creating a delightful crunch that is perfect for munching during festivals, gatherings, or as a tasty snack any time of the day. Murukku is a beloved classic in Indian snacks.\n\nPackaged in an attractive container, our Murukku is not only delicious but also makes for a great gift for friends and family. Enjoy the authentic taste of India with every bite.",
+        "rating": 4.6,
+        "reviews": 180,
+        "image": "/marketplace/products-img/m1.jpg",
+        "images": [
+          "/marketplace/products-img/m2.jpg",
+          "/marketplace/products-img/m3.jpg",
+          "/marketplace/products-img/m4.jpg"
+        ]
+      }
+    ],
+    "classical-music": [
+      {
+      "name": "Tabla Set",
+      "brand": "Rhythm Beats",
+      "price": 2999,
+      "description": "Experience the authentic sounds of Indian classical music with our premium Tabla Set by Rhythm Beats. This professional-grade set includes perfectly tuned dayan (right hand drum) and bayan (left hand drum), crafted with selected wood and premium goatskin heads for exceptional tonal quality and resonance.\n\nEach tabla is meticulously handcrafted by skilled artisans using traditional techniques passed down through generations, ensuring superior craftsmanship and authentic sound character. The set comes complete with cushions, covers, and tuning hammer, making it perfect for students, performers, and music enthusiasts alike.\n\nWhether you're practicing at home, teaching students, or performing on stage, this tabla set delivers the rich, versatile sounds essential for classical ragas, fusion compositions, or contemporary music. A beautiful representation of India's rich musical heritage that will serve you for years to come.",
+      "rating": 4.7,
+      "reviews": 150,
+      "image": "/marketplace/products-img/ts1.jpg",
+      "images": [
+        "/marketplace/products-img/ts2.jpg",
+        "/marketplace/products-img/ts3.jpg",
+        "/marketplace/products-img/ts4.jpg"
+      ]
+      },
+      {
+        "name": "Sitar",
+        "brand": "Melody Makers",
+        "price": 36999,
+        "rating": 4.8,
+        "reviews": 200,
+        "image": "/marketplace/products-img/s1.jpg",
+        "images": [
+          "/marketplace/products-img/s2.jpg",
+          "/marketplace/products-img/s3.jpg",
+          "/marketplace/products-img/s4.jpg"
+        ]
+      },
+      {
+        "name": "Harmonium",
+        "brand": "Classic Tunes",
+        "price": 38999,
+        "description": "Discover the rich sounds of Indian classical music with our Harmonium by Classic Tunes. This beautifully crafted instrument features a sturdy wooden body, high-quality reeds, and a smooth keyboard for easy playability. Perfect for both beginners and experienced musicians, it is ideal for solo performances, group sessions, or accompanying vocalists.\n\nThe harmonium's rich tonal quality and versatile range make it suitable for various genres, including classical, devotional, and folk music. Its compact design allows for easy transport, making it a great choice for home practice or performances on the go.",
+        "rating": 4.6,
+        "reviews": 180,
+        "image": "/marketplace/products-img/h1.jpg",
+        "images": [
+          "/marketplace/products-img/h2.jpg",
+          "/marketplace/products-img/h3.jpg",
+          "/marketplace/products-img/h4.jpg"
+        ]
+      },
+      {
+        "name": "Veena",
+        "brand": "Carnatic Strings",
+        "price": 47999,
+        "description": "Experience the soulful sounds of Indian classical music with our Veena by Carnatic Strings. This beautifully crafted instrument features a sturdy wooden body, high-quality strings, and intricate carvings that reflect the rich heritage of Indian craftsmanship. Perfect for both beginners and experienced musicians, it is ideal for solo performances, group sessions, or accompanying vocalists.\n\nThe veena's rich tonal quality and versatile range make it suitable for various genres, including classical, devotional, and folk music. Its elegant design adds a touch of beauty to any space, making it a great choice for home decor as well.",
+        "rating": 4.9,
+        "reviews": 120,
+        "image": "/marketplace/products-img/v1.jpg",
+        "images": [
+          "/marketplace/products-img/v2.jpg",
+          "/marketplace/products-img/v3.jpg",
+          "/marketplace/products-img/v4.jpg"
+        ]
+      },
+      {
+        "name": "Flute",
+        "brand": "Bansuri Bliss",
+        "price": 999,
+        "description": "Discover the enchanting sounds of Indian classical music with our Flute by Bansuri Bliss. This beautifully crafted instrument features a sturdy bamboo body and precision-cut holes for easy playability. Perfect for both beginners and experienced musicians, it is ideal for solo performances, group sessions, or accompanying vocalists.\n\nThe flute's rich tonal quality and versatile range make it suitable for various genres, including classical, devotional, and folk music. Its lightweight design allows for easy transport, making it a great choice for home practice or performances on the go.",
+        "rating": 4.5,
+        "reviews": 300,
+        "image": "/marketplace/products-img/f1.jpg",
+        "images": [
+          "/marketplace/products-img/f2.jpg",
+          "/marketplace/products-img/f3.jpg",
+          "/marketplace/products-img/f4.jpg"
+        ]
+      },
+      {
+        "name": "Mridangam",
+        "brand": "Percussion Pro",
+        "price": 5999,
+        "description": "Experience the rich sounds of Indian classical music with our Mridangam by Percussion Pro. This beautifully crafted instrument features a sturdy wooden body, high-quality skins, and intricate carvings that reflect the rich heritage of Indian craftsmanship. Perfect for both beginners and experienced musicians, it is ideal for solo performances, group sessions, or accompanying vocalists.\n\nThe mridangam's rich tonal quality and versatile range make it suitable for various genres, including classical, devotional, and folk music. Its elegant design adds a touch of beauty to any space, making it a great choice for home decor as well.",
+        "rating": 4.7,
+        "reviews": 140,
+        "image": "/marketplace/products-img/md1.jpg",
+        "images": [
+          "/marketplace/products-img/md2.jpg",
+          "/marketplace/products-img/md3.jpg",
+          "/marketplace/products-img/md4.jpg"
+        ]
+      },
+      {
+        "name": "Tanpura",
+        "brand": "Raga Essentials",
+        "price": 16999,
+        "description": "Enhance your musical experience with our Tanpura by Raga Essentials. This beautifully crafted instrument features a sturdy wooden body, high-quality strings, and intricate carvings that reflect the rich heritage of Indian craftsmanship. Perfect for both beginners and experienced musicians, it is ideal for solo performances, group sessions, or accompanying vocalists.\n\nThe tanpura's rich tonal quality and versatile range make it suitable for various genres, including classical, devotional, and folk music. Its elegant design adds a touch of beauty to any space, making it a great choice for home decor as well.",
+        "rating": 4.8,
+        "reviews": 100,
+        "image": "/marketplace/products-img/t1.jpg",
+        "images": [
+          "/marketplace/products-img/t2.jpg",
+          "/marketplace/products-img/t3.jpg",
+          "/marketplace/products-img/t4.jpg"
+        ]
+      },
+      {
+        "name": "Dholak",
+        "brand": "Folk Beats",
+        "price": 2499,
+        "description": "Experience the vibrant sounds of Indian folk music with our Dholak by Folk Beats. This beautifully crafted instrument features a sturdy wooden body, high-quality skins, and intricate carvings that reflect the rich heritage of Indian craftsmanship. Perfect for both beginners and experienced musicians, it is ideal for solo performances, group sessions, or accompanying vocalists.\n\nThe dholak's rich tonal quality and versatile range make it suitable for various genres, including classical, devotional, and folk music. Its elegant design adds a touch of beauty to any space, making it a great choice for home decor as well.",
+        "rating": 4.4,
+        "reviews": 220,
+        "image": "/marketplace/products-img/d1.jpg",
+        "images": [
+          "/marketplace/products-img/d2.jpg",
+          "/marketplace/products-img/d3.jpg",
+          "/marketplace/products-img/d4.jpg"
+        ]
+      },
+      {
+        "name": "Sarangi",
+        "brand": "Soulful Strings",
+        "price": 38999,
+        "description": "Experience the soulful sounds of Indian classical music with our Sarangi by Soulful Strings. This beautifully crafted instrument features a sturdy wooden body, high-quality strings, and intricate carvings that reflect the rich heritage of Indian craftsmanship. Perfect for both beginners and experienced musicians, it is ideal for solo performances, group sessions, or accompanying vocalists.\n\nThe sarangi's rich tonal quality and versatile range make it suitable for various genres, including classical, devotional, and folk music. Its elegant design adds a touch of beauty to any space, making it a great choice for home decor as well.",
+        "rating": 4.9,
+        "reviews": 80,
+        "image": "/marketplace/products-img/sa1.jpg",
+        "images": [
+          "/marketplace/products-img/sa2.jpg",
+          "/marketplace/products-img/sa3.jpg",
+          "/marketplace/products-img/sa4.jpg"
+        ]
+      },
+      {
+        "name": "Pakhawaj",
+        "brand": "Rhythm Roots",
+        "price": 6499,
+        "description": "Experience the rich sounds of Indian classical music with our Pakhawaj by Rhythm Roots. This beautifully crafted instrument features a sturdy wooden body, high-quality skins, and intricate carvings that reflect the rich heritage of Indian craftsmanship. Perfect for both beginners and experienced musicians, it is ideal for solo performances, group sessions, or accompanying vocalists.\n\nThe pakhawaj's rich tonal quality and versatile range make it suitable for various genres, including classical, devotional, and folk music. Its elegant design adds a touch of beauty to any space, making it a great choice for home decor as well.",
+        "rating": 4.6,
+        "reviews": 90,
+        "image": "/marketplace/products-img/pa1.jpg",
+        "images": [
+          "/marketplace/products-img/pa2.jpg",
+          "/marketplace/products-img/pa3.jpg",
+          "/marketplace/products-img/pa4.jpg"
+        ]
+      }
+    ],
+    "eco-friendly": [
+      {
+        "name": "Jute Bag",
+        "brand": "Eco Trends",
+        "price": 299,
+        "description": "Carry your essentials in style with our Eco-Friendly Jute Bag by Eco Trends. Made from 100% natural jute, this bag is not only durable but also biodegradable, making it a perfect choice for environmentally conscious shoppers. The spacious interior and sturdy handles make it ideal for grocery shopping, beach outings, or everyday use.\n\nWith its stylish design and eco-friendly materials, this jute bag is a great alternative to plastic bags. Show your commitment to sustainability while looking chic and fashionable.",
+        "rating": 4.5,
+        "reviews": 120,
+        "image": "/marketplace/products-img/jub1.jpg",
+        "images": [
+          "/marketplace/products-img/jub2.jpg",
+          "/marketplace/products-img/jub3.jpg",
+          "/marketplace/products-img/jub4.jpg"
+        ]
+      },
+      {
+        "name": "Bamboo Toothbrush",
+        "brand": "Green Smile",
+        "price": 99,
+        "description": "Make a positive impact on the environment with our Eco-Friendly Bamboo Toothbrush by Green Smile. Made from 100% biodegradable bamboo, this toothbrush is a sustainable alternative to plastic toothbrushes. The soft bristles are gentle on your gums while effectively cleaning your teeth.\n\nWith its stylish design and eco-friendly materials, this bamboo toothbrush is a great choice for environmentally conscious individuals. Show your commitment to sustainability while maintaining your oral hygiene.",
+        "rating": 4.7,
+        "reviews": 200,
+        "image": "/marketplace/products-img/bt1.jpg",
+        "images": [
+          "/marketplace/products-img/bt2.jpg",
+          "/marketplace/products-img/bt3.jpg",
+          "/marketplace/products-img/bt4.jpg"
+        ]
+      },
+      {
+        "name": "Reusable Steel Straw Set",
+        "brand": "Eco Essentials",
+        "price": 199,
+        "description": "Sip sustainably with our Reusable Steel Straw Set by Eco Essentials. Made from high-quality stainless steel, these straws are durable, reusable, and easy to clean. The set includes a variety of straw sizes, perfect for smoothies, cocktails, or everyday beverages.\n\nWith its stylish design and eco-friendly materials, this straw set is a great alternative to single-use plastic straws. Show your commitment to sustainability while enjoying your favorite drinks.",
+        "rating": 4.6,
+        "reviews": 150,
+        "image": "/marketplace/products-img/ss1.jpg",
+        "images": [
+          "/marketplace/products-img/ss2.jpg",
+          "/marketplace/products-img/ss3.jpg",
+          "/marketplace/products-img/ss4.jpg"
+        ]
+      },
+      {
+        "name": "Coconut Shell Bowls",
+        "brand": "Nature's Touch",
+        "price": 499,
+        "description": "Enjoy your meals in style with our Eco-Friendly Coconut Shell Bowls by Nature's Touch. Made from 100% natural coconut shells, these bowls are not only beautiful but also biodegradable, making them a perfect choice for environmentally conscious individuals. The unique design and natural finish add a touch of elegance to any dining experience.\n\nWith their stylish design and eco-friendly materials, these coconut shell bowls are a great alternative to plastic or ceramic bowls. Show your commitment to sustainability while enjoying your favorite dishes.",
+        "rating": 4.8,
+        "reviews": 180,
+        "image": "/marketplace/products-img/csb1.jpg",
+        "images": [
+          "/marketplace/products-img/csb2.jpg",
+          "/marketplace/products-img/csb3.jpg",
+          "/marketplace/products-img/csb4.jpg"
+        ]
+      },
+      {
+        "name": "Cloth Grocery Bags",
+        "brand": "Eco Carry",
+        "price": 249,
+        "description": "Shop sustainably with our Eco-Friendly Cloth Grocery Bags by Eco Carry. Made from 100% natural cotton, these bags are not only durable but also reusable and washable, making them a perfect choice for environmentally conscious shoppers. The spacious interior and sturdy handles make them ideal for grocery shopping, beach outings, or everyday use.\n\nWith their stylish design and eco-friendly materials, these cloth grocery bags are a great alternative to plastic bags. Show your commitment to sustainability while looking chic and fashionable.",
+        "rating": 4.4,
+        "reviews": 100,
+        "image": "/marketplace/products-img/cb1.jpg",
+        "images": [
+          "/marketplace/products-img/cb2.jpg",
+          "/marketplace/products-img/cb3.jpg",
+          "/marketplace/products-img/cb4.jpg"
+        ]
+      },
+      {
+        "name": "Biodegradable Plates",
+        "brand": "Green Tableware",
+        "price": 1049,
+        "description": "Serve your meals in style with our Eco-Friendly Biodegradable Plates by Green Tableware. Made from 100% natural materials, these plates are not only durable but also biodegradable, making them a perfect choice for environmentally conscious individuals. The unique design and natural finish add a touch of elegance to any dining experience.\n\nWith their stylish design and eco-friendly materials, these biodegradable plates are a great alternative to plastic or paper plates. Show your commitment to sustainability while enjoying your favorite dishes.",
+        "rating": 4.5,
+        "reviews": 140,
+        "image": "/marketplace/products-img/bp1.jpg",
+        "images": [
+          "/marketplace/products-img/bp2.jpg",
+          "/marketplace/products-img/bp3.jpg",
+          "/marketplace/products-img/bp4.jpg"
+        ]
+      },
+      {
+        "name": "Plantable Seed Pencils",
+        "brand": "Grow Green",
+        "price": 149,
+        "description": "Make a positive impact on the environment with our Eco-Friendly Plantable Seed Pencils by Grow Green. Made from 100% natural materials, these pencils are not only functional but also biodegradable. Each pencil contains seeds that can be planted after use, allowing you to grow your own plants.\n\nWith their stylish design and eco-friendly materials, these plantable seed pencils are a great alternative to traditional pencils. Show your commitment to sustainability while enjoying your writing experience.",
+        "rating": 4.7,
+        "reviews": 220,
+        "image": "/marketplace/products-img/psp1.jpg",
+        "images": [
+          "/marketplace/products-img/psp2.jpg",
+          "/marketplace/products-img/psp3.jpg",
+          "/marketplace/products-img/psp4.jpg"
+        ]
+      },
+      {
+        "name": "Eco-Friendly Yoga Mat",
+        "brand": "Nature Yoga",
+        "price": 999,
+        "description": "Enhance your yoga practice with our Eco-Friendly Yoga Mat by Nature Yoga. Made from 100% natural materials, this mat is not only durable but also biodegradable, making it a perfect choice for environmentally conscious yogis. The non-slip surface provides excellent grip and stability, ensuring a safe and comfortable practice.\n\nWith its stylish design and eco-friendly materials, this yoga mat is a great alternative to traditional mats. Show your commitment to sustainability while enjoying your yoga sessions.",
+        "rating": 4.9,
+        "reviews": 300,
+        "image": "/marketplace/products-img/ym1.jpg",
+        "images": [
+          "/marketplace/products-img/ym2.jpg",
+          "/marketplace/products-img/ym3.jpg",
+          "/marketplace/products-img/ym4.jpg"
+        ]
+      },
+      {
+        "name": "Compostable Trash Bags",
+        "brand": "Eco Bin",
+        "price": 399,
+        "description": "Make a positive impact on the environment with our Eco-Friendly Compostable Trash Bags by Eco Bin. Made from 100% natural materials, these bags are not only durable but also biodegradable, making them a perfect choice for environmentally conscious individuals. The strong and sturdy design ensures that they can hold a variety of waste without tearing.",
+        "rating": 4.6,
+        "reviews": 180,
+        "image": "/marketplace/products-img/ctb1.jpg",
+        "images": [
+          "/marketplace/products-img/ctb2.jpg",
+          "/marketplace/products-img/ctb3.jpg",
+          "/marketplace/products-img/ctb4.jpg"
+        ]
+      },
+      {
+        "name": "Bamboo Cutlery Set",
+        "brand": "Green Dining",
+        "price": 299,
+        "description": "Enjoy your meals sustainably with our Eco-Friendly Bamboo Cutlery Set by Green Dining. Made from 100% natural bamboo, this cutlery set is not only durable but also biodegradable, making it a perfect choice for environmentally conscious individuals. The stylish design and lightweight nature make it ideal for picnics, camping, or everyday use.\n\nWith its eco-friendly materials and elegant design, this bamboo cutlery set is a great alternative to plastic cutlery. Show your commitment to sustainability while enjoying your meals.",
+        "rating": 4.8,
+        "reviews": 250,
+        "image": "/marketplace/products-img/bcs1.jpg",
+        "images": [
+          "/marketplace/products-img/bcs2.jpg",
+          "/marketplace/products-img/bcs3.jpg",
+          "/marketplace/products-img/bcs4.jpg"
+        ]
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": "Ashwagandha Powder",
+        "brand": "Herbal Life",
+        "price": 399,
+        "description": "Experience the benefits of Ashwagandha with our premium Ashwagandha Powder by Herbal Life. Sourced from the finest quality roots, this powder is known for its adaptogenic properties, helping to reduce stress and promote overall well-being. Perfect for adding to smoothies, teas, or your favorite recipes, our Ashwagandha Powder is a versatile addition to your health routine.\n\nWith its rich nutritional profile and natural flavor, this powder is a great choice for those looking to enhance their wellness journey. Enjoy the authentic taste of Ayurveda with every scoop.",
+        "rating": 4.6,
+        "reviews": 200,
+        "image": "/marketplace/products-img/ap1.jpg",
+        "images": [
+          "/marketplace/products-img/ap2.jpg",
+          "/marketplace/products-img/ap3.jpg",
+          "/marketplace/products-img/ap4.jpg"
+        ]
+      },
+      {
+        "name": "Chyawanprash",
+        "brand": "Dabur",
+        "price": 349,
+        "description": "Boost your immunity with our traditional Chyawanprash by Dabur. This Ayurvedic health supplement is made from a blend of herbs, spices, and natural ingredients, known for its rejuvenating properties. Perfect for daily consumption, our Chyawanprash is a delicious way to support your overall health and well-being.\n\nPackaged in an attractive jar, this Chyawanprash is not only nutritious but also makes for a great gift for friends and family. Enjoy the authentic taste of Ayurveda with every spoonful.",
+        "rating": 4.8,
+        "reviews": 500,
+        "image": "/marketplace/products-img/cw1.jpg",
+        "images": [
+          "/marketplace/products-img/cw2.jpg",
+          "/marketplace/products-img/cw3.jpg",
+          "/marketplace/products-img/cw4.jpg"
+        ]
+      },
+      {
+        "name": "Triphala Tablets",
+        "brand": "Himalaya",
+        "price": 299,
+        "description": "Support your digestive health with our Triphala Tablets by Himalaya. This traditional Ayurvedic formulation is made from a blend of three fruits, known for their detoxifying and rejuvenating properties. Perfect for daily use, our Triphala Tablets are a convenient way to promote overall wellness and vitality.\n\nPackaged in an attractive bottle, these tablets are not only effective but also make for a great gift for friends and family. Enjoy the authentic benefits of Ayurveda with every tablet.",
+        "rating": 4.7,
+        "reviews": 300,
+        "image": "/marketplace/products-img/tt1.jpg",
+        "images": [
+          "/marketplace/products-img/tt2.jpg",
+          "/marketplace/products-img/tt3.jpg",
+          "/marketplace/products-img/tt4.jpg"
+        ]
+      },
+      {
+        "name": "Brahmi Oil",
+        "brand": "Ayurvedic Bliss",
+        "price": 249,
+        "description": "Nourish your hair and scalp with our Brahmi Oil by Ayurvedic Bliss. This traditional Ayurvedic oil is made from a blend of Brahmi leaves and natural oils, known for their nourishing and rejuvenating properties. Perfect for daily use, our Brahmi Oil is a convenient way to promote healthy hair growth and scalp health.\n\nPackaged in an attractive bottle, this oil is not only effective but also makes for a great gift for friends and family. Enjoy the authentic benefits of Ayurveda with every drop.",
+        "rating": 4.5,
+        "reviews": 150,
+        "image": "/marketplace/products-img/bo1.jpg",
+        "images": [
+          "/marketplace/products-img/bo2.jpg",
+          "/marketplace/products-img/bo3.jpg",
+          "/marketplace/products-img/bo4.jpg"
+        ]
+      },
+      {
+        "name": "Neem Capsules",
+        "brand": "Organic India",
+        "price": 199,
+        "description": "Support your skin health with our Neem Capsules by Organic India. This traditional Ayurvedic formulation is made from pure neem leaves, known for their detoxifying and purifying properties. Perfect for daily use, our Neem Capsules are a convenient way to promote overall wellness and vitality.\n\nPackaged in an attractive bottle, these capsules are not only effective but also make for a great gift for friends and family. Enjoy the authentic benefits of Ayurveda with every capsule.",
+        "rating": 4.6,
+        "reviews": 180,
+        "image": "/marketplace/products-img/nc1.jpg",
+        "images": [
+          "/marketplace/products-img/nc2.jpg",
+          "/marketplace/products-img/nc3.jpg",
+          "/marketplace/products-img/nc4.jpg"
+        ]
+      },
+      {
+        "name": "Aloe Vera Gel",
+        "brand": "Patanjali",
+        "price": 150,
+        "description": "Nourish your skin with our Aloe Vera Gel by Patanjali. This natural gel is made from pure aloe vera extract, known for its soothing and hydrating properties. Perfect for daily use, our Aloe Vera Gel is a convenient way to promote healthy and radiant skin.\n\nPackaged in an attractive bottle, this gel is not only effective but also makes for a great gift for friends and family. Enjoy the authentic benefits of Ayurveda with every application.",
+        "rating": 4.4,
+        "reviews": 220,
+        "image": "/marketplace/products-img/avg1.jpg",
+        "images": [
+          "/marketplace/products-img/avg2.jpg",
+          "/marketplace/products-img/avg3.jpg",
+          "/marketplace/products-img/avg4.jpg"
+        ]
+      },
+      {
+        "name": "Shilajit Resin",
+        "brand": "Pure Herbs",
+        "price": 999,
+        "description": "Experience the power of nature with our Shilajit Resin by Pure Herbs. This natural resin is sourced from the Himalayas and is known for its rejuvenating and energizing properties. Perfect for daily use, our Shilajit Resin is a convenient way to promote overall wellness and vitality.\n\nPackaged in an attractive jar, this resin is not only effective but also makes for a great gift for friends and family. Enjoy the authentic benefits of Ayurveda with every scoop.",
+        "rating": 4.9,
+        "reviews": 120,
+        "image": "/marketplace/products-img/sr1.jpg",
+        "images": [
+          "/marketplace/products-img/sr2.jpg",
+          "/marketplace/products-img/sr3.jpg",
+          "/marketplace/products-img/sr4.jpg"
+        ]
+      },
+      {
+        "name": "Tulsi Drops",
+        "brand": "Zandu",
+        "price": 199,
+        "description": "Support your immune system with our Tulsi Drops by Zandu. This natural formulation is made from pure tulsi leaves, known for their detoxifying and purifying properties. Perfect for daily use, our Tulsi Drops are a convenient way to promote overall wellness and vitality.\n\nPackaged in an attractive bottle, these drops are not only effective but also make for a great gift for friends and family. Enjoy the authentic benefits of Ayurveda with every drop.",
+        "rating": 4.7,
+        "reviews": 250,
+        "image": "/marketplace/products-img/td1.jpg",
+        "images": [
+          "/marketplace/products-img/td2.jpg",
+          "/marketplace/products-img/td3.jpg",
+          "/marketplace/products-img/td4.jpg"
+        ]
+      },
+      {
+        "name": "Kumkumadi Tailam",
+        "brand": "Ayurvedic Glow",
+        "price": 2799,
+        "description": "Discover the ancient beauty secret of Kumkumadi Tailam by Ayurvedic Glow, a luxurious facial oil crafted using traditional Ayurvedic principles. This premium formulation blends over 15 precious herbs including saffron, sandalwood, and lotus, creating a potent elixir renowned for its skin-rejuvenating properties.\n\nKnown as 'miracle oil' in Ayurveda, Kumkumadi Tailam helps brighten complexion, reduce dark spots, and promote an even skin tone while deeply nourishing your skin. Its lightweight texture absorbs quickly, making it suitable for all skin types, especially for those seeking natural solutions to address pigmentation, fine lines, or dullness.\n\nEach bottle is meticulously prepared following ancient methods to preserve the therapeutic qualities of its ingredients. Incorporate this treasure into your nightly skincare routine for radiant, youthful-looking skin.",
+        "rating": 4.8,
+        "reviews": 300,
+        "image": "/marketplace/products-img/kt1.jpg",
+        "images": [
+          "/marketplace/products-img/kt2.jpg",
+          "/marketplace/products-img/kt3.jpg",
+          "/marketplace/products-img/kt4.jpg"
+        ]
+      },
+      {
+        "name": "Herbal Tea",
+        "brand": "Tea Treasure",
+        "price": 449,
+        "description": "Indulge in the soothing flavors of our Herbal Tea by Tea Treasure. This delightful blend features a harmonious mix of natural herbs and spices, carefully selected for their health benefits and aromatic qualities. Perfect for any time of day, our herbal tea is a refreshing way to unwind and relax.\n\nPackaged in an attractive box, this herbal tea is not only delicious but also makes for a great gift for friends and family. Enjoy the authentic taste of nature with every sip.",
+        "rating": 4.5,
+        "reviews": 400,
+        "image": "/marketplace/products-img/ht1.jpg",
+        "images": [
+          "/marketplace/products-img/ht2.jpg",
+          "/marketplace/products-img/ht3.jpg",
+          "/marketplace/products-img/ht4.jpg"
+        ]
+      }
+    ]
+  },
+  "featuredProducts": [
+    {
+      "name": "Handcrafted Wooden Elephant",
+      "brand": "Artisan Creations",
+      "price": 1299,
+      "description": "Add a touch of elegance to your home decor with our Handcrafted Wooden Elephant by Artisan Creations. This exquisite piece is meticulously carved from high-quality wood, showcasing intricate details that reflect the rich heritage of Indian craftsmanship. Perfect for gifting or as a statement piece in your living space, this wooden elephant symbolizes strength and wisdom.\n\nEach piece is unique, making it a perfect addition to your collection or a thoughtful gift for loved ones. Bring home this beautiful representation of artistry and tradition.",
+      "rating": 4.7,
+      "reviews": 320,
+      "image": "/marketplace/products-img/wood-elephant1.png",
+      "images": [
+          "/marketplace/products-img/wood-elephant2.png",
+          "/marketplace/products-img/wood-elephant3.png",
+          "/marketplace/products-img/wood-elephant4.png"
+        ]
+    },
+    {
+      "name": "Traditional Brass Oil Lamp",
+      "brand": "Divine Decor",
+      "price": 899,
+      "description": "Illuminate your space with our Traditional Brass Oil Lamp by Divine Decor. This stunning piece is handcrafted from high-quality brass, featuring intricate designs that reflect the rich heritage of Indian craftsmanship. Perfect for festivals, pooja ceremonies, or as a decorative accent in your home, this oil lamp symbolizes prosperity and good fortune.\n\nEach piece is unique, making it a perfect addition to your collection or a thoughtful gift for loved ones. Bring home this beautiful representation of artistry and tradition.",
+      "rating": 4.8,
+      "reviews": 250,
+      "image": "/marketplace/products-img/oil-lamp1.png",
+      "images": [
+          "/marketplace/products-img/oil-lamp2.png",
+          "/marketplace/products-img/oil-lamp3.png",
+          "/marketplace/products-img/oil-lamp4.png"
+        ]
+    },
+    {
+      "name": "Kalamkari Wall Hanging",
+      "brand": "Ethnic Art",
+      "price": 1599,
+      "description": "Transform your living space with our exquisite Kalamkari Wall Hanging by Ethnic Art. This stunning piece showcases the ancient Indian art of Kalamkari, where skilled artisans hand-paint intricate designs using natural dyes on premium cotton fabric. Each stroke tells a story, featuring traditional motifs inspired by mythology, nature, and folklore.\n\nPerfect for adding a touch of cultural elegance to any room, this wall hanging serves as both a statement piece and a celebration of India's rich artistic heritage. The vibrant colors and meticulous craftsmanship make it an eye-catching addition to your home decor or a thoughtful gift for art enthusiasts and those who appreciate traditional craftsmanship.",
+      "rating": 4.6,
+      "reviews": 180,
+      "image": "/marketplace/products-img/kalamkari1.png",
+      "images": [
+        "/marketplace/products-img/kalamkari2.png",
+        "/marketplace/products-img/kalamkari3.png",
+        "/marketplace/products-img/kalamkari4.png"
+      ]
+    },
+    {
+      "name": "Terracotta Tea Set",
+      "brand": "ClayCraft",
+      "price": 999,
+      "description": "Enjoy your tea in style with our Terracotta Tea Set by ClayCraft. This beautifully handcrafted set includes a teapot, cups, and saucers, all made from high-quality terracotta. The natural clay material enhances the flavor of your tea while adding a rustic charm to your tea time.\n\nPerfect for gifting or as a delightful addition to your kitchenware collection, this terracotta tea set is not only functional but also a work of art. Bring home this unique representation of traditional craftsmanship.",
+      "rating": 4.5,
+      "reviews": 210,
+      "image": "/marketplace/products-img/tea-set1.png",
+      "images": [
+          "/marketplace/products-img/tea-set2.png",
+          "/marketplace/products-img/tea-set3.png",
+          "/marketplace/products-img/tea-set4.png"
+        ]
+    },
+    {
+      "name": "Pashmina Shawl",
+      "brand": "Kashmir Weaves",
+      "price": 2499,
+      "description": "Wrap yourself in luxury with our authentic Pashmina Shawl by Kashmir Weaves. Handcrafted by skilled artisans in Kashmir, this exquisite shawl is made from the finest pashmina wool, known for its incredible softness, warmth, and lightweight feel. The intricate traditional patterns and meticulous craftsmanship reflect centuries of heritage and artistic excellence.\n\nPerfect for special occasions or everyday elegance, this versatile shawl adds a touch of sophistication to any outfit. Whether draped over your shoulders on a cool evening, wrapped as a scarf during winter, or used as a stylish accent to your formal attire, this pashmina shawl effortlessly elevates your style while keeping you comfortably warm.\n\nEach shawl represents a piece of living heritage and makes for a timeless keepsake or a thoughtful gift that will be cherished for generations. Experience the unparalleled luxury that has made Kashmiri pashminas coveted worldwide.",
+      "rating": 4.9,
+      "reviews": 400,
+      "image": "/marketplace/products-img/shawl1.jpg",
+      "images": [
+        "/marketplace/products-img/shawl2.jpg",
+        "/marketplace/products-img/shawl3.jpg",
+        "/marketplace/products-img/shawl4.jpg"
+      ]
+    },
+    {
+      "name": "Handmade Clay Vase",
+      "brand": "Pottery Bliss",
+      "price": 799,
+      "description": "Add a touch of elegance to your home decor with our Handmade Clay Vase by Pottery Bliss. This exquisite piece is meticulously crafted from high-quality clay, showcasing intricate designs that reflect the rich heritage of Indian craftsmanship. Perfect for displaying fresh flowers or as a standalone decorative accent, this clay vase adds a rustic charm to any space.\n\nEach piece is unique, making it a perfect addition to your collection or a thoughtful gift for loved ones. Bring home this beautiful representation of artistry and tradition.",
+      "rating": 4.6,
+      "reviews": 150,
+      "image": "/marketplace/products-img/vase1.jpg",
+      "images": [
+          "/marketplace/products-img/vase2.jpg",
+          "/marketplace/products-img/vase3.jpg",
+          "/marketplace/products-img/vase4.jpg"
+        ]
+    },
+    {
+      "name": "Decorative Wooden Tray",
+      "brand": "Rustic Charm",
+      "price": 1199,
+      "description": "Elevate your home decor with our exquisite Decorative Wooden Tray by Rustic Charm. Meticulously handcrafted from premium quality wood, this tray showcases intricate carving patterns and a beautiful finish that highlights the natural grain of the wood. The perfect blend of functionality and aesthetics, it adds a touch of traditional elegance to any space.\n\nIdeal for serving guests, organizing your essentials, or as a striking centerpiece on your coffee table or dining area. Each tray is uniquely crafted, making it not just a household item but a piece of art that tells a story of traditional craftsmanship and attention to detail. A thoughtful housewarming gift or a special addition to your own collection of handcrafted treasures.",
+      "rating": 4.7,
+      "reviews": 200,
+      "image": "/marketplace/products-img/wood-tray1.jpg",
+      "images": [
+        "/marketplace/products-img/wood-tray2.jpg",
+        "/marketplace/products-img/wood-tray3.jpg",
+        "/marketplace/products-img/wood-tray4.jpg"
+      ]
+    },
+    {
+      "name": "Brass Ganesh Idol",
+      "brand": "Divine Sculptures",
+      "price": 1499,
+      "description": "Bring home blessings and prosperity with our exquisite Brass Ganesh Idol by Divine Sculptures. This beautifully crafted idol is made from high-quality brass, showcasing intricate details that reflect the rich heritage of Indian craftsmanship. Perfect for pooja ceremonies, home decor, or as a thoughtful gift, this Ganesh idol symbolizes wisdom and success.\n\nEach piece is unique, making it a perfect addition to your collection or a meaningful gift for loved ones. Bring home this beautiful representation of artistry and devotion.",
+      "rating": 4.8,
+      "reviews": 300,
+      "image": "/marketplace/products-img/ganesh1.jpg",
+      "images": [
+          "/marketplace/products-img/ganesh2.jpg",
+          "/marketplace/products-img/ganesh3.jpg",
+          "/marketplace/products-img/ganesh4.jpg"
+        ]
+    },
+    {
+      "name": "Handwoven Cotton Rug",
+      "brand": "Ethnic Weaves",
+      "price": 999,
+      "description": "Transform your living space with our beautiful Handwoven Cotton Rug by Ethnic Weaves. Meticulously crafted by skilled artisans using traditional techniques, this rug features intricate patterns and vibrant colors that reflect India's rich textile heritage.\n\nMade from 100% natural cotton, this rug is not only stunning but also durable and easy to maintain. Its versatile design makes it perfect for any room in your home, whether as a statement piece in your living room, a soft touch in your bedroom, or a warm welcome in your entryway.\n\nEach rug is unique, showcasing the exceptional craftsmanship and attention to detail that goes into traditional handweaving. A perfect blend of functionality and artistry, this rug adds texture, comfort, and cultural elegance to your home décor.",
+      "rating": 4.5,
+      "reviews": 180,
+      "image": "/marketplace/products-img/rug1.jpg",
+      "images": [
+        "/marketplace/products-img/rug2.jpg",
+        "/marketplace/products-img/rug3.jpg",
+        "/marketplace/products-img/rug4.jpg"
+      ]
+    },
+    {
+      "name": "Traditional Copper Water Bottle",
+      "brand": "Ayurvedic Essentials",
+      "price": 699,
+      "description": "Embrace the ancient wisdom of Ayurveda with our Traditional Copper Water Bottle by Ayurvedic Essentials. Crafted from high-quality pure copper, this bottle not only serves as a stylish water container but also offers numerous health benefits according to Ayurvedic principles. The copper naturally ionizes water, creating a natural alkaline effect that may support digestion, immunity, and overall well-being.\n\nDesigned with both functionality and elegance in mind, this leak-proof bottle features a sleek silhouette and a secure cap that makes it perfect for daily use at home, office, or during travel. The bottle's natural antimicrobial properties help keep your water fresh longer while adding a subtle earthy taste.\n\nMaintain the tradition of drinking water stored in copper vessels while enjoying the modern convenience of this beautiful, practical bottle. A thoughtful gift for health-conscious friends and family or a valuable addition to your own wellness routine.",
+      "rating": 4.4,
+      "reviews": 220,
+      "image": "/marketplace/products-img/copper-bottle1.jpg",
+      "images": [
+          "/marketplace/products-img/copper-bottle2.jpg",
+          "/marketplace/products-img/copper-bottle3.jpg",
+          "/marketplace/products-img/copper-bottle4.jpg"
+        ]
+    }
+  ]
+}

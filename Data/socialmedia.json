@@ -1,0 +1,112 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Majestic Jaipur Palace",
+      "location": {
+        "city": "Jaipur",
+        "state": "Rajasthan"
+      },
+      "description": "Exploring the beautiful Amber Fort in Jaipur. The architecture is breathtaking and the views of the city are amazing. A must-visit for anyone traveling to Rajasthan!",
+      "images": ["../img/social-media/jaipur1.jpg"],
+      "likes": 243,
+      "comments": 42,
+      "author": {
+        "name": "Priya Sharma",
+        "avatar": "../img/social-media/avatar1.jpg"
+      },
+      "date": "2025-04-15",
+      "tags": ["heritage", "architecture", "royal"]
+    },
+    {
+      "id": 2,
+      "title": "Backwaters of Kerala",
+      "location": {
+        "city": "Alleppey",
+        "state": "Kerala"
+      },
+      "description": "Spent an amazing day cruising the serene backwaters of Kerala. The houseboat experience was truly magical with delicious local cuisine and breathtaking scenery.",
+      "images": ["../img/social-media/kerala1.jpg"],
+      "likes": 187,
+      "comments": 29,
+      "author": {
+        "name": "Arjun Menon",
+        "avatar": "../img/social-media/avatar2.png"
+      },
+      "date": "2025-04-10",
+      "tags": ["backwaters", "nature", "peaceful"]
+    },
+    {
+      "id": 3,
+      "title": "Hidden Waterfall in Meghalaya",
+      "location": {
+        "city": "Cherrapunji",
+        "state": "Meghalaya"
+      },
+      "description": "Found this spectacular waterfall after a 2-hour trek. Meghalaya truly deserves its name as the 'Abode of Clouds'. The pristine beauty of this place is unmatched!",
+      "images": ["../img/social-media/meghalaya1.jpg"],
+      "likes": 352,
+      "comments": 51,
+      "author": {
+        "name": "Mihir Patel",
+        "avatar": "../img/social-media/avatar2.png"
+      },
+      "date": "2025-04-05",
+      "tags": ["waterfall", "trekking", "northeast"]
+    },
+    {
+      "id": 4,
+      "title": "Golden Temple at Dusk",
+      "location": {
+        "city": "Amritsar",
+        "state": "Punjab"
+      },
+      "description": "The Golden Temple looks absolutely magical at sunset. The spiritual atmosphere combined with the beautiful architecture makes this a truly unforgettable experience.",
+      "images": ["../img/social-media/amritsar1.jpg"],
+      "likes": 421,
+      "comments": 63,
+      "author": {
+        "name": "Gurpreet Singh",
+        "avatar": "../img/social-media/avatar2.png"
+      },
+      "date": "2025-04-02",
+      "tags": ["spiritual", "golden", "peaceful"]
+    },
+    {
+      "id": 5,
+      "title": "Beach Paradise in Goa",
+      "location": {
+        "city": "Palolem",
+        "state": "Goa"
+      },
+      "description": "Relaxing day at Palolem Beach. The crystal clear waters and palm-fringed shores make this one of the most beautiful beaches I've ever visited in India.",
+      "images": ["../img/social-media/goa1.jpg"],
+      "likes": 278,
+      "comments": 38,
+      "author": {
+        "name": "Meera Nair",
+        "avatar": "../img/social-media/avatar1.jpg"
+      },
+      "date": "2025-03-28",
+      "tags": ["beach", "relaxation", "sunset"]
+    },
+    {
+      "id": 6,
+      "title": "Snow-capped Himalayas",
+      "location": {
+        "city": "Manali",
+        "state": "Himachal Pradesh"
+      },
+      "description": "The breathtaking view of the Himalayas from Rohtang Pass. The snow-covered peaks stretching as far as the eye can see is simply awe-inspiring.",
+      "images": ["../img/social-media/himachal1.jpg"],
+      "likes": 315,
+      "comments": 47,
+      "author": {
+        "name": "Vikram Bhatt",
+        "avatar": "../img/social-media/avatar2.png"
+      },
+      "date": "2025-03-25",
+      "tags": ["mountains", "snow", "adventure"]
+    }
+  ]
+}

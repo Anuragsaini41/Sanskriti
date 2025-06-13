@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    
+</head>
+<body>
+    <!-- Navbar from index.html -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Sanskriti</h1>
+        <ul class="nav-links">
+          <li><a href="../socialmedia/social.html">Commune</a><span></span></li>
+          <li><a href="../hotel/hotel.html">Hotels</a><span></span></li>
+          <li><a href="../marketplace/market.html">SanskritiCart</a><span></span></li>
+        </ul>
+        <div class="right-side">
+          <div class="account-menu">
+            <button class="account-btn" id="accountBtn">My Account</button>
+            <div class="dropdown-content" id="dropdownContent">
+              <a href="../auth/signup.html" id="signupLink">Sign Up</a>
+              <a href="../auth/login.html" id="loginLink">Login</a>
+              <p id="userName" style="display: none;">
+                <span id="userDisplayName" class="username" style="cursor: pointer;">Username</span>
+                <button id="signOutBtn" class="signout-btn">Sign Out</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="cont">
+        <section class="profile">
+            <div class="profile-image-container">
+                <img src="../img/noprofile.jpg" alt="Profile Image" id="profileImage">
+                <!-- Add Button -->
+                <button class="add-image-btn" id="addImageBtn">Add</button>
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            </div>
+            <h2>Ayush Rastogi</h2>
+            <div class="links">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+            <!-- Profile Buttons -->
+            <!-- Edit Profile Button -->
+            <button class="profile-action-btn" id="editProfileBtn">Edit Profile</button>
+            <!-- Sign Out Button -->
+            <button id="signOutProfileBtn" class="signout-profile-btn">Sign Out</button>
+        </section>
+        <section class="modules">
+            <div class="explore">
+                <h2>Explore</h2>
+            </div>
+            <div class="cb">
+                <div class="cart">
+                    <h2>Cart</h2>
+                    <p id="cartInfo">You have 0 items in your cart.</p> <!-- Cart info will be updated dynamically -->
+                    <button id="goToCartBtn" class="go-to-cart-btn">Go to Cart</button>
+                </div>
+                <div class="bookings">
+                    <h2>Your Bookings</h2>
+                    <p id="bookingsInfo">You have 0 hotel bookings.</p>
+                    <button id="goToBookingsBtn" class="go-to-bookings-btn">View All Bookings</button>
+                </div>
+            </div>
+            
+        </section>
+        </section>
+        <section class="posts">
+            <h1>Posts</h1>
+        </section>
+    </main>
+
+    <!-- External JS -->
+    <script src="../sanskriti.js"></script> <!-- Include shared JS -->
+    <script src="dashboard.js"></script>
+    <script>
+        // Sign Out Button Logic
+        document.getElementById('signOutProfileBtn').addEventListener('click', function () {
+            localStorage.removeItem('username'); // Remove username from localStorage
+            alert('You have been signed out.');
+            window.location.href = '../index.html'; // Redirect to index.html
+        });
+
+        document.querySelector('.profile-action-btn').addEventListener('click', () => {
+            window.location.href = './edit-profile.html';
+        });
+    </script>
+</body>
+</html>

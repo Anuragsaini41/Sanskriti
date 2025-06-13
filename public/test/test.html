@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskriti Culture Quiz</title>
+    <link rel="stylesheet" href="test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Sanskriti</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#community">Popular</a></li>
+                <li><a href="../hotel_list.html">Hotels</a></li>
+                <li><a href="../marketplace/market.html">Market Place</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="admin/login.html" class="admin-link">
+                    <i class="fas fa-user-shield"></i> Admin
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="test-form-section">
+        <h1><i class="fas fa-trophy"></i> Sanskriti Culture Quiz</h1>
+        <p style="font-size: 18px; margin-bottom: 20px; color: #666;">Test your knowledge of Indian states and culture!</p>
+        
+        <!-- Timer will only show during quiz -->
+        <div id="timer" style="display: none;">
+            <i class="fas fa-clock"></i> Time Remaining: 5:00
+        </div>
+
+        <form id="user-info-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+                    <div id="firstName-error" class="error-message" style="display: none;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+                    <div id="lastName-error" class="error-message" style="display: none;"></div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="aadhaar">Aadhaar Number</label>
+                    <input type="text" id="aadhaar" name="aadhaar" maxlength="12" pattern="[0-9]{12}" required autocomplete="off">
+                    <div id="aadhaar-error" class="error-message" style="display: none;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="10" max="100" required autocomplete="age">
+                    <div id="age-error" class="error-message" style="display: none;"></div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required autocomplete="address-level2">
+                    <div id="city-error" class="error-message" style="display: none;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="district">District</label>
+                    <input type="text" id="district" name="district" required autocomplete="address-level3">
+                    <div id="district-error" class="error-message" style="display: none;"></div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" required autocomplete="address-level1">
+                    <div id="state-error" class="error-message" style="display: none;"></div>
+                </div>
+                <div class="form-group">
+                    <!-- Empty div for layout balance -->
+                </div>
+            </div>
+
+            <button type="submit" id="submit-button">
+                <i class="fas fa-play"></i> Start Quiz
+            </button>
+        </form>
+
+        <!-- Questions section (initially hidden) -->
+        <div id="personality-form" style="display: none;">
+            <div id="questions-section">
+                <div id="question-number"></div>
+                <div id="question-text"></div>
+                <form id="questions-form"></form>
+                <div id="button-container">
+                    <button type="button" id="previous-question-button" style="display: none;">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button type="button" id="next-question-button" style="display: none;">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result section -->
+        <div id="result" style="display: none;"></div>
+        <div id="thank-you-message" style="display: none;">
+            <h2>Thank you for participating!</h2>
+            <p id="result-message"></p>
+        </div>
+    </div>
+
+    <script type="module" src="test.js"></script>
+</body>
+</html>

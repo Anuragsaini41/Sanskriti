@@ -1,0 +1,199 @@
+/* Modern Edit Profile Styling 2025 */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9f4ee 0%, #f3ede3 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Edit Profile Container */
+.edit-profile-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.edit-profile-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #ae8861, #7d5f41);
+}
+
+/* Heading Styling */
+.edit-profile-container h2 {
+  text-align: center;
+  color: #7d5f41;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.edit-profile-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #ae8861, #7d5f41);
+  border-radius: 3px;
+}
+
+/* Form Styling */
+#editProfileForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Field Styling */
+.input-field {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02) inset;
+}
+
+.input-field input:focus {
+  border-color: #ae8861;
+  box-shadow: 0 0 0 3px rgba(174, 136, 97, 0.1);
+  outline: none;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+}
+
+/* Save Button Styling */
+.save-btn {
+  background: linear-gradient(135deg, #ae8861 0%, #7d5f41 100%);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(174, 136, 97, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.save-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(174, 136, 97, 0.4);
+}
+
+.save-btn:active {
+  transform: translateY(1px);
+}
+
+.save-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.save-btn:hover::after {
+  opacity: 1;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 3px solid #e74c3c;
+  display: none;
+}
+
+.error-message:not(:empty) {
+  display: block;
+}
+
+/* Input Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#editProfileForm .input-field {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+#editProfileForm .input-field:nth-child(1) { animation-delay: 0.1s; }
+#editProfileForm .input-field:nth-child(2) { animation-delay: 0.2s; }
+#editProfileForm .input-field:nth-child(3) { animation-delay: 0.3s; }
+#editProfileForm .input-field:nth-child(4) { animation-delay: 0.4s; }
+#editProfileForm .input-field:nth-child(5) { animation-delay: 0.5s; }
+#editProfileForm .input-field:nth-child(6) { animation-delay: 0.6s; }
+#editProfileForm .save-btn { animation-delay: 0.7s; animation: fadeInUp 0.6s ease forwards; opacity: 0; }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .edit-profile-container {
+    padding: 30px 20px;
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+}

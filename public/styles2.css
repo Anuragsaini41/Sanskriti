@@ -1,0 +1,84 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #fff; /* Changed to white */
+    color: #333; /* Adjusted text color for contrast */
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Optional: adds a border for separation */
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+.content-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.content-section h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.images {
+    margin-top: 2rem;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #fff; /* Changed to white */
+    color: #333; /* Adjusted text color for contrast */
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Optional: adds a border for separation */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

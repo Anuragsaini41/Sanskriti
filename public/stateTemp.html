@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleState.css">
+    <link rel="stylesheet" href="./hotel/styleh.css">
+    <title>State Name - Cultural Heritage</title>
+</head>
+<body>
+    <!-- Navbar from hotel.html -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Sanskriti</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a><span></span></li>
+                <li><a href="./hotel/hotel.html">Hotels</a><span></span></li>
+                <li><a href="./marketplace/market.html">SanskritiCart</a><span></span></li>
+                <li><a href="./socialmedia/social.html">Experiences</a><span></span></li>
+            </ul>
+            <div class="right-side">
+                <div class="account-menu">
+                    <button class="account-btn" id="accountBtn">My Account</button>
+                    <div class="dropdown-content" id="dropdownContent"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with State Banner -->
+    <section class="state-hero">
+        <div class="state-hero-content">
+            <h1>State Name</h1>
+            <p class="state-tagline">Official Tagline or Description</p>
+        </div>
+    </section>
+
+    <!-- Quick Info Section -->
+    <section class="quick-info">
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="icon capital"></i>
+                <h3>Capital</h3>
+                <p>Capital City</p>
+            </div>
+            <div class="info-card">
+                <i class="icon language"></i>
+                <h3>Language</h3>
+                <p>Official Languages</p>
+            </div>
+            <div class="info-card">
+                <i class="icon population"></i>
+                <h3>Population</h3>
+                <p>Population Count</p>
+            </div>
+            <div class="info-card">
+                <i class="icon area"></i>
+                <h3>Area</h3>
+                <p>Total Area</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <div id="stateMap"></div>
+                <div class="map-overlay">
+                    <h3>Districts</h3>
+                    <div class="district-list"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Highlights -->
+    <section class="cultural-highlights">
+        <div class="container">
+            <h2>Cultural Heritage</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card festivals">
+                    <h3>Festivals</h3>
+                    <ul class="festival-list"></ul>
+                </div>
+                <div class="highlight-card cuisine">
+                    <h3>Cuisine</h3>
+                    <div class="cuisine-gallery"></div>
+                </div>
+                <div class="highlight-card arts">
+                    <h3>Arts & Crafts</h3>
+                    <div class="arts-showcase"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourist Attractions -->
+    <section class="tourist-spots">
+        <div class="container">
+            <h2>Must Visit Places</h2>
+            <div class="spots-carousel">
+                <!-- Spots will be added dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <iframe src="" width="600" height="450" style="border:0;" ></iframe>
+
+    <!-- Footer from hotel.html -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Same footer structure as hotel.html -->
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="stateDetails.js"></script>
+</body>
+</html>

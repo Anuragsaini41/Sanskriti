@@ -1,0 +1,623 @@
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9f4ee 0%, #f3ede3 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(174, 136, 97, 0.05) 0%, transparent 70%);
+  top: -200px;
+  right: -100px;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(174, 136, 97, 0.05) 0%, transparent 70%);
+  bottom: -150px;
+  left: -150px;
+  z-index: 0;
+}
+
+/* Container Styling */
+.signup-container, .login-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  width: 90%;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 90vh;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.signup-container::before, .login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #ae8861, #7d5f41);
+}
+
+
+.signup-container::-webkit-scrollbar,
+.login-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.signup-container::-webkit-scrollbar-thumb,
+.login-container::-webkit-scrollbar-thumb {
+  background-color: rgba(174, 136, 97, 0.3);
+  border-radius: 10px;
+}
+
+.signup-container::-webkit-scrollbar-track,
+.login-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+
+.signup-container h2,
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #7d5f41;
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.signup-container h2::after,
+.login-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #ae8861, #7d5f41);
+  border-radius: 3px;
+}
+
+/* Input Field Styling */
+.input-field {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus-within label {
+  color: #ae8861;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.input-field input, 
+.input-field select, 
+.input-field input[type="date"] {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02) inset;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.input-field input:focus, 
+.input-field select:focus, 
+.input-field input[type="date"]:focus {
+  border-color: #ae8861;
+  box-shadow: 0 0 0 3px rgba(174, 136, 97, 0.1);
+  outline: none;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+}
+
+
+.input-field::after {
+  content: none;
+  display: none;
+}
+
+
+input[type="date"] {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%237d5f41' d='M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z'/%3E%3C/svg%3E");
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Show Password Toggle Styling */
+.input-field label[for="showPassword"] {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.input-field #showPassword {
+  margin-right: 8px;
+  accent-color: #ae8861;
+  width: 16px;
+  height: 16px;
+}
+
+/* Button Styling */
+.signup-btn,
+.login-btn {
+  background: linear-gradient(135deg, #ae8861 0%, #7d5f41 100%);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(174, 136, 97, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(174, 136, 97, 0.4);
+}
+
+.signup-btn:active,
+.login-btn:active {
+  transform: translateY(1px);
+}
+
+.signup-btn::after,
+.login-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.signup-btn:hover::after,
+.login-btn:hover::after {
+  opacity: 1;
+}
+
+/* OTP Section Styling */
+#otp-section {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 3px solid #e74c3c;
+}
+
+.error-message:empty {
+  display: none;
+}
+
+/* Redirect Text Styling */
+.signup-redirect,
+.login-redirect {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #666;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.signup-redirect a,
+.login-redirect a {
+  color: #ae8861;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.signup-redirect a:hover,
+.login-redirect a:hover {
+  color: #7d5f41;
+}
+
+.signup-redirect a::after,
+.login-redirect a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ae8861, #7d5f41);
+  transition: width 0.3s;
+}
+
+.signup-redirect a:hover::after,
+.login-redirect a:hover::after {
+  width: 100%;
+}
+
+/* Animation for form elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Staggered animations for form fields */
+form .input-field:nth-child(1) { animation: slideIn 0.4s ease forwards; animation-delay: 0.1s; opacity: 0; }
+form .input-field:nth-child(2) { animation: slideIn 0.4s ease forwards; animation-delay: 0.15s; opacity: 0; }
+form .input-field:nth-child(3) { animation: slideIn 0.4s ease forwards; animation-delay: 0.2s; opacity: 0; }
+form .input-field:nth-child(4) { animation: slideIn 0.4s ease forwards; animation-delay: 0.25s; opacity: 0; }
+form .input-field:nth-child(5) { animation: slideIn 0.4s ease forwards; animation-delay: 0.3s; opacity: 0; }
+form .input-field:nth-child(6) { animation: slideIn 0.4s ease forwards; animation-delay: 0.35s; opacity: 0; }
+form .input-field:nth-child(7) { animation: slideIn 0.4s ease forwards; animation-delay: 0.4s; opacity: 0; }
+form .input-field:nth-child(8) { animation: slideIn 0.4s ease forwards; animation-delay: 0.45s; opacity: 0; }
+form .input-field:nth-child(9) { animation: slideIn 0.4s ease forwards; animation-delay: 0.5s; opacity: 0; }
+form .input-field:nth-child(10) { animation: slideIn 0.4s ease forwards; animation-delay: 0.55s; opacity: 0; }
+form .input-field:nth-child(11) { animation: slideIn 0.4s ease forwards; animation-delay: 0.6s; opacity: 0; }
+form .input-field:nth-child(12) { animation: slideIn 0.4s ease forwards; animation-delay: 0.65s; opacity: 0; }
+form .input-field:nth-child(13) { animation: slideIn 0.4s ease forwards; animation-delay: 0.7s; opacity: 0; }
+
+form button {
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+/* Password container styling */
+.password-container {
+  position: relative;
+}
+
+.show-password-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  transition: color 0.2s;
+}
+
+.show-password-btn:hover {
+  color: #ae8861;
+}
+
+/* Modern Calendar Styling */
+.calendar-container,
+.datepicker-dropdown,
+.ui-datepicker,
+.datepicker,
+.bootstrap-datepicker,
+.flatpickr-calendar {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+  padding: 15px !important;
+  overflow: hidden !important;
+}
+
+/* Month Navigation */
+.datepicker-header,
+.ui-datepicker-header,
+.bootstrap-datepicker-header {
+  background: transparent !important;
+  border: none !important;
+  margin-bottom: 10px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.datepicker-title,
+.ui-datepicker-title {
+  color: #7d5f41 !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  margin: 0 !important;
+  position: relative !important;
+}
+
+/* Navigation Arrows */
+.datepicker-prev,
+.datepicker-next,
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 32px !important;
+  height: 32px !important;
+  background: rgba(174, 136, 97, 0.1) !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s !important;
+}
+
+.datepicker-prev:hover,
+.datepicker-next:hover,
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover {
+  background: rgba(174, 136, 97, 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Calendar Table */
+.datepicker table,
+.ui-datepicker table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 3px !important;
+}
+
+/* Day Names */
+.datepicker th,
+.ui-datepicker th {
+  color: #7d5f41 !important;
+  font-weight: 500 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  padding: 8px 0 !important;
+  text-align: center !important;
+}
+
+/* Calendar Days */
+.datepicker td,
+.ui-datepicker td {
+  padding: 0 !important;
+}
+
+.datepicker td a,
+.datepicker td span,
+.ui-datepicker td a,
+.ui-datepicker td span {
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  border-radius: 50% !important;
+  color: #333 !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: all 0.2s !important;
+  margin: 0 auto !important;
+}
+
+/* Hover state */
+.datepicker td a:hover,
+.ui-datepicker td a:hover {
+  background: rgba(174, 136, 97, 0.15) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Today's date */
+.datepicker td.today a,
+.ui-datepicker td.ui-datepicker-today a {
+  border: 2px solid rgba(174, 136, 97, 0.5) !important;
+  color: #7d5f41 !important;
+  font-weight: 600 !important;
+}
+
+/* Selected date */
+.datepicker td.active a,
+.datepicker td.selected a,
+.ui-datepicker td.ui-datepicker-current-day a {
+  background: linear-gradient(135deg, #ae8861 0%, #7d5f41 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 10px rgba(174, 136, 97, 0.3) !important;
+}
+
+/* Disabled dates */
+.datepicker td.disabled a,
+.ui-datepicker td.ui-state-disabled span {
+  color: #ccc !important;
+  pointer-events: none !important;
+  background: transparent !important;
+}
+
+/* Month/Year Dropdown */
+.datepicker-dropdown-year,
+.datepicker-dropdown-month,
+.ui-datepicker-month,
+.ui-datepicker-year {
+  padding: 8px 12px !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #333 !important;
+  font-size: 0.95rem !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%237d5f41' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 10px center !important;
+  cursor: pointer !important;
+  margin: 0 5px !important;
+  outline: none !important;
+  font-family: inherit !important;
+}
+
+.datepicker-dropdown-year:focus,
+.datepicker-dropdown-month:focus,
+.ui-datepicker-month:focus,
+.ui-datepicker-year:focus {
+  border-color: #ae8861 !important;
+  box-shadow: 0 0 0 3px rgba(174, 136, 97, 0.1) !important;
+}
+
+/* Bottom buttons */
+.datepicker-clear,
+.datepicker-today {
+  background: none !important;
+  border: none !important;
+  padding: 8px 15px !important;
+  border-radius: 30px !important;
+  cursor: pointer !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+  transition: all 0.3s !important;
+}
+
+.datepicker-today {
+  color: white !important;
+  background: linear-gradient(135deg, #ae8861 0%, #7d5f41 100%) !important;
+  box-shadow: 0 4px 10px rgba(174, 136, 97, 0.2) !important;
+  font-weight: 600 !important;
+}
+
+.datepicker-clear {
+  color: #666 !important;
+}
+
+.datepicker-clear:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+  color: #333 !important;
+}
+
+.datepicker-today:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 15px rgba(174, 136, 97, 0.3) !important;
+}
+
+/* Year/month buttons */
+.datepicker-switch-month-year {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Date input field */
+input[type="date"] {
+  padding-right: 30px !important; /* Space for calendar icon */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 600px) {
+  .signup-container, .login-container {
+    padding: 30px 20px;
+    margin: 15px;
+    width: calc(100% - 30px);
+  }
+  
+  .signup-container h2,
+  .login-container h2 {
+    font-size: 24px;
+  }
+  
+  .input-field input, 
+  .input-field select, 
+  .input-field input[type="date"] {
+    padding: 12px 15px;
+  }
+}

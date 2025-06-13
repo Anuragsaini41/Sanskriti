@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanskriti</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+  <style>
+    /* Initial state - hidden until JS loads */
+    body {
+      visibility: hidden; /* Hide initially */
+      opacity: 0;
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    /* This class will be added by JS */
+    body.loaded {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Replace the existing navbar with this -->
+<nav class="navbar">
+  <div class="container">
+    <h1 class="logo">Sanskriti</h1>
+    <ul class="nav-links">
+      <!-- <li><a href="#home">Home</a><span></span></li> -->
+      <!-- <li><a href="#community">Popular</a><span></span></li> -->
+      <li><a href="./socialmedia/social.html">Commune</a><span></span></li>
+      <!-- <li><a href="./test/test.html">Quiz</a><span></span></li> -->
+      <li><a href="./hotel/hotel.html">Hotels</a><span></span></li>
+      <li><a href="./marketplace/market.html">SanskritiCart</a><span></span></li>
+      <!-- <li><a href="#about-us">About Us</a><span></span></li> -->
+      <!-- <li><a href="./contact.html">Contact Us</a><span></span></li> -->
+    </ul>
+    <div class="right-side">
+      <!-- <a href="./upload/UploadForm.html" class="upload-btn">Upload</a> -->
+      <div class="account-menu">
+        <button class="account-btn" id="accountBtn">My Account</button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="./auth/signup.html" id="signupLink">Sign Up</a>
+          <a href="./auth/login.html" id="loginLink">Login</a>
+          <p id="userName" style="display: none;">
+            <span id="userDisplayName" class="username" style="cursor: pointer;">Username</span>
+            <button id="signOutBtn" class="signout-btn">Sign Out</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="quiz-btn"><a href="./test/test.html">Play Quiz and Win!</a></div>
+
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div id="hero-animation-container"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="namaste-title-container">
+        <h1>नमस्ते (Namaste)</h1>
+        <!-- Namaste image removed -->
+      </div>
+      <div class="namaste-slider-container">
+        <div class="namaste-slider">
+          <div class="slides">
+            <!-- Slides content -->
+          </div>
+        </div>
+      </div>
+      <h2>Welcome to Sanskriti</h2>
+      <p>Your journey to amazing experiences starts here.</p>
+      <a href="#state-slider-header" class="btn">Explore India</a>
+    </div>
+    <div id="women-animation-container">
+      <div class="window-sill"></div>
+    </div>
+  </div>
+</section>
+
+<section id="thank-you">
+  <div class="thankyou-content">
+    <!-- Content injected by JS -->
+  </div>
+</section>
+
+<!-- Added State Slider Section -->
+<div class="section-header" id="state-slider-header">
+  <h2>States and Union Territories</h2>
+  <p>Explore the diverse cultures and traditions of Indian States and Union Territories</p>
+</div>
+<section class="state-slider">
+    <div class="carousel">
+        <div class="list">
+            <!-- Items will be injected via JavaScript -->
+        </div>
+        <div class="controls">
+            <div class="arrows">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+            <div class="thumbnail">
+                <!-- Thumbnails will be injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- First Community Section - Traditions -->
+<section id="traditions" class="community-section traditions">
+  <div class="section-header">
+    <h2>India's Timeless Traditions: A Global Blessing</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="community-container">
+    <div class="community-trait">
+      <div class="community-trait-inner">
+        <img src="./img/yog.jpeg" alt="Yog" />
+        <div class="community-trait-content">
+          <h3>Yog:</h3>
+          <p>
+            An ancient practice that encompasses physical, mental, and
+            spiritual disciplines to achieve a state of harmony and
+            self-realization...
+          </p>
+          <a href="./traditions/yog.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="community-trait">
+      <div class="community-trait-inner">
+        <img src="./img/ayurveda.jpeg" alt="Ayurveda" />
+        <div class="community-trait-content">
+          <h3>Ayurveda:</h3>
+          <p>
+            An ancient system of medicine originating from India, focusing on
+            balancing the body's energies through natural remedies...
+          </p>
+          <a href="./traditions/ayurveda.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="community-trait">
+      <div class="community-trait-inner">
+        <img src="./img/vedic.jpeg" alt="Vedic Mathematics" />
+        <div class="community-trait-content">
+          <h3>Vedic Mathematics:</h3>
+          <p>
+            A set of techniques and formulas derived from ancient Indian
+            scriptures that simplify arithmetic and algebraic calculations...
+          </p>
+          <a href="./traditions/vedic_m.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="community-trait hidden-trait">
+      <div class="community-trait-inner">
+        <img src="./img/textile.jpeg" alt="Indian Textiles" />
+        <div class="community-trait-content">
+          <h3>Indian Textiles:</h3>
+          <p>
+            Rich and diverse, Indian textiles include a variety of traditional
+            fabrics such as sarees and silk...
+          </p>
+          <a href="./traditions/indian-textiles.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="community-trait hidden-trait">
+      <div class="community-trait-inner">
+        <img src="./img/mehndi.jpeg" alt="Mehndi" />
+        <div class="community-trait-content">
+          <h3>Mehndi (मेहंदी):</h3>
+          <p>
+            A traditional art form involving the application of intricate
+            henna designs on the skin, especially during festive and
+            ceremonial occasions...
+          </p>
+          <a href="./traditions/mehndi.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="community-trait hidden-trait">
+      <div class="community-trait-inner">
+        <img src="./img/kala.jpeg" alt="Kalaripayattu" />
+        <div class="community-trait-content">
+          <h3>Kalaripayattu (कलारीपयट्टु):</h3>
+          <p>
+            An ancient martial art form from Kerala that combines physical
+            training with spiritual practices...
+          </p>
+          <a href="./traditions/kalaripayattu.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="show-more-container">
+    <button class="show-more-btn" data-section-id="traditions">Show More</button>
+  </div>
+</section>
+
+<!-- Second Community Section - Ancient Wisdom -->
+<section id="ancient-wisdom" class="community-section wisdom">
+  <div class="section-header">
+    <h2>India's Treasures of Ancient Wisdom</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="community-container">
+    <div class="community-trait">
+      <img src="/img/geeta.jpeg" alt="Yog" />
+      <div class="community-trait-content">
+        <h3>Shrimad Bhagavad Gita (श्रीमद्भगवद्गीता):</h3>
+        <br>
+        <p>
+          The <em>Shrimad Bhagavad Gita (श्रीमद्भगवद्गीता)</em>, a 700-verse scripture...
+        </p>
+        <a href="/epics/geeta.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <div class="community-trait">
+      <img src="/img/ramayana.jpeg" alt="Ayurveda" />
+      <div class="community-trait-content">
+        <h3>Ramayan (रामायण):</h3>
+        <br>
+        <p>
+          The <em>Ramayan</em> is an ancient Indian epic, traditionally attributed to...
+        </p>
+        <a href="/epics/ramayana.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <div class="community-trait">
+      <img src="/img/mahabharta.jpeg" alt="Vedic Mathematics" />
+      <div class="community-trait-content">
+        <h3>Mahabhart (महाभारत):</h3>
+        <br>
+        <p>
+          The <em>Mahabharat</em> is one of the two great Sanskrit epics of ancient India...
+        </p>
+        <a href="/epics/mahabharta.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <div class="community-trait hidden-trait">
+      <img src="/img/vedas.jpeg" alt="Indian Textiles" />
+      <div class="community-trait-content">
+        <h3>Vedas (वेद):</h3>
+        <br>
+        <p>
+          The <em>Vedas</em> are a collection of ancient sacred texts that form the...
+        </p>
+        <a href="/epics/vedas.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <div class="community-trait hidden-trait">
+      <img src="/img/upanishad.jpeg.jpg" alt="Mehndi" />
+      <div class="community-trait-content">
+        <h3>Upanishads (उपनिषद):</h3>
+        <br>
+        <p>
+          The <em>Upanishads</em> are a collection of ancient Indian philosophical teachings...
+        </p>
+        <a href="/epics/upanishads.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-more-container">
+    <button class="show-more-btn" data-section-id="ancient-wisdom">Show More</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<!-- Add this before closing body tag -->
+<!-- <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About Sanskriti</h3>
+            <p>Discover India's rich cultural heritage, traditions, and diversity. Your gateway to understanding and experiencing the essence of Indian culture.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./socialmedia/social.html">Commune</a></li>
+                <li><a href="./hotel/hotel.html">Hotels</a></li>
+                <li><a href="./marketplace/market.html">SanskritiCart</a></li>
+                <li><a href="./test/test.html">Cultural Quiz</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Featured Sections</h3>
+            <ul>
+                <li><a href="#traditions">Indian Traditions</a></li>
+                <li><a href="#ancient-wisdom">Ancient Wisdom</a></li>
+                <li><a href="#state-slider">States & UTs</a></li>
+                <li><a href="#thank-you">Upcoming Festivals</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+                <a href="#"><img src="/img/icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="/img/icons/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="/img/icons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="/img/icons/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Sanskriti. All rights reserved. | Celebrating Indian Culture & Heritage</p>
+    </div>
+</footer> -->
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>About Sanskriti</h3>
+      <p>Sanskriti is your gateway to exploring India's rich cultural heritage and traditions. From timeless practices to modern interpretations, we bring you closer to the essence of India through curated experiences, luxurious stays, and immersive journeys.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Explore</h3>
+      <ul class="footer-links">
+        <li><a href="./socialmedia/social.html">Commune</a></li>
+        <li><a href="./hotel/hotel.html">Hotels</a></li>
+        <li><a href="./marketplace/market.html">SanskritiCart</a></li>
+        <li><a href="./test/test.html">Cultural Quiz</a></li>
+        <li><a href="#traditions">Indian Traditions</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Help & Support</h3>
+      <ul class="footer-links">
+        <li><a href="./help/cultural-guide.html">Cultural Guide</a></li>
+        <li><a href="./help/event-policies.html">Event Policies</a></li>
+        <li><a href="./help/community-guidelines.html">Community Guidelines</a></li>
+        <li><a href="./help/faqs.html">FAQs</a></li>
+        <li><a href="./help/contact-support.html">Contact Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Get in Touch</h3>
+      <ul class="footer-contact">
+        <li><i class="contact-icon">✉️</i> info@sanskriti.com</li>
+        <li><i class="contact-icon">📞</i> +91 1800-123-4567</li>
+        <li><i class="contact-icon">📍</i> Delhi, India</li>
+      </ul>
+      <div class="footer-social">
+        <a href="#" title="Facebook">📱</a>
+        <a href="#" title="Twitter">🐦</a>
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="YouTube">📺</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Sanskriti. Discover and Experience India's Rich Cultural Heritage</p>
+  </div>
+</footer>
+<script src="/sanskriti.js"></script>
+<script src="states.js"></script>
+</body>
+</html>

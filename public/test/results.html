@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results & Winners - Sanskriti</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <nav class="frosted-navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Sanskriti</a>
+            
+            <!-- Mobile menu toggle button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#community">Popular</a></li>
+                <li><a href="../hotel_list.html">Hotels</a></li>
+                <li><a href="../marketplace/market.html">Market Place</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+                <li><a href="test.html">Take Quiz</a></li>
+                <li><a href="admin/login.html">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="results-container">
+        <h1>Sanskriti Quiz Weekly Winners</h1>
+        
+        <div class="week-selector">
+            <label for="week-select">Select Week: </label>
+            <select id="week-select">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+        </div>
+        
+        <div class="winners-section">
+            <h2>This Week's Winners</h2>
+            <div id="winners-container">
+                <!-- Will be populated by JavaScript -->
+                <p class="no-winners">Loading winners...</p>
+            </div>
+        </div>
+        
+        <div class="statistics-section">
+            <div class="stat-card">
+                <div id="total-participants" class="stat-number">0</div>
+                <div class="stat-label">Total Participants</div>
+            </div>
+            <div class="stat-card">
+                <div id="perfect-scores" class="stat-number">0</div>
+                <div class="stat-label">Perfect Scores</div>
+            </div>
+            <div class="stat-card">
+                <div id="avg-score" class="stat-number">0</div>
+                <div class="stat-label">Average Score</div>
+            </div>
+        </div>
+
+        <div class="export-section">
+            <button id="export-results" class="export-btn">Export Detailed Results</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sanskriti. All Rights Reserved.</p>
+    </footer>
+
+    <script src="results.js"></script>
+</body>
+</html>

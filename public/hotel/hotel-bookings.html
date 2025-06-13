@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Hotel Bookings | Sanskriti</title>
+    <link rel="stylesheet" href="styleh.css">
+    <link rel="stylesheet" href="hotel-bookings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Sanskriti</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../marketplace/market.html">Marketplace</a></li>
+                <li><a href="../community/commune.html">Commune</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../Dashboard/dashboard.html" class="my-account-btn">My Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bookings Header -->
+    <div class="bookings-header">
+        <div class="container">
+            <h1>Your Hotel Bookings</h1>
+        </div>
+    </div>
+
+    <!-- Bookings Content -->
+    <div class="bookings-content">
+        <div class="container">
+            <div class="booking-list-container">
+                <!-- Bookings will be displayed here dynamically -->
+                <div id="bookingsList"></div>
+            </div>
+            
+            <!-- Empty state when no bookings -->
+            <div id="emptyBookings" style="display: none;">
+                <div class="empty-bookings">
+                    <i class="fas fa-bed"></i>
+                    <h2>No Bookings Found</h2>
+                    <p>You haven't made any hotel bookings yet. Start exploring our hotels to find your perfect stay!</p>
+                    <a href="hotel.html" class="browse-hotels-btn">Browse Hotels</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Sanskriti Hotels</h3>
+                    <p>Discover India's finest hotels and cultural stays. Experience traditional hospitality with modern luxury across beautiful destinations.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="hotel.html">Hotels</a></li>
+                        <li><a href="../marketplace/market.html">Marketplace</a></li>
+                        <li><a href="../Dashboard/dashboard.html">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="far fa-envelope"></i> support@sanskriti.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 1800-123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sanskriti. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="hotel-bookings.js"></script>
+</body>
+</html>

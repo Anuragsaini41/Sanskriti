@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Details - Cultural Heritage</title>
+    
+    <!-- Required CSS -->
+    <link rel="stylesheet" href="styleState.css">
+    <link rel="stylesheet" href="./hotel/styleh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script type="module" src="stateDetails.js"></script>
+</head>
+<body>
+    <!-- Keep existing navbar -->
+
+    <!-- Hero Section -->
+    <section class="state-hero">
+        <div class="state-hero-overlay"></div>
+        <div class="state-hero-content">
+            <h1 id="stateName"></h1>
+            <p class="state-tagline" id="stateTagline"></p>
+            <div class="hero-quick-stats">
+                <div class="stat-item">
+                    <i class="fas fa-calendar"></i>
+                    <span id="formationDay"></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-landmark"></i>
+                    <span id="capital"></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span id="population"></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-map"></i>
+                    <span id="area"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Error State -->
+    <div class="state-not-found" style="display: none;">
+        <div class="container">
+            <h2>State Not Found</h2>
+            <p>Sorry, we couldn't find information for the requested state.</p>
+            <a href="../index.html" class="back-btn">Back to States</a>
+        </div>
+    </div>
+
+    <!-- Historical Timeline -->
+    <section class="historical-timeline">
+        <div class="container">
+            <h2>Historical Journey</h2>
+            <div class="timeline"></div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="state-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-text">
+                    <h2>About the State</h2>
+                    <p class="state-description"></p>
+                    <div class="key-highlights">
+                        <h3>Key Highlights</h3>
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="overview-gallery"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Heritage -->
+    <section class="cultural-heritage">
+        <div class="container">
+            <h2>Rich Cultural Heritage</h2>
+            <div class="heritage-grid">
+                <div class="heritage-card traditions">
+                    <i class="fas fa-om"></i>
+                    <h3>Traditions</h3>
+                    <div class="tradition-content"></div>
+                </div>
+                <div class="heritage-card festivals">
+                    <i class="fas fa-star"></i>
+                    <h3>Major Festivals</h3>
+                    <div class="festival-timeline"></div>
+                </div>
+                <div class="heritage-card dance">
+                    <i class="fas fa-music"></i>
+                    <h3>Art Forms</h3>
+                    <div class="art-forms-grid">
+                        <!-- Dynamic art forms -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add to the Cultural Heritage section -->
+    <section class="art-craft-section">
+        <div class="container">
+            <h2>Arts & Crafts Heritage</h2>
+            <div class="craft-grid">
+                <!-- Will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuisine Section -->
+    <section class="state-cuisine">
+        <div class="container">
+            <h2>Traditional Cuisine</h2>
+            <div class="cuisine-showcase">
+                <div class="cuisine-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+                    <button class="filter-btn" data-filter="non-vegetarian">Non-Vegetarian</button>
+                    <button class="filter-btn" data-filter="sweets">Sweets & Desserts</button>
+                </div>
+                <div class="cuisine-grid">
+                    <!-- Dynamic cuisine cards -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourist Spots -->
+    <section class="tourist-attractions">
+        <div class="container">
+            <h2>Places to Visit</h2>
+            <div class="attractions-container">
+                <div class="attractions-list">
+                    <div class="category-filters">
+                        <button class="category-btn active" data-category="all">All</button>
+                        <button class="category-btn" data-category="historical">Historical</button>
+                        <button class="category-btn" data-category="religious">Religious</button>
+                        <button class="category-btn" data-category="nature">Nature</button>
+                    </div>
+                    <div class="places-grid"></div>
+                </div>
+                <div class="attraction-map">
+                    <div id="touristMap"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Experiences -->
+    <section class="local-experiences">
+        <div class="container">
+            <h2>Local Experiences</h2>
+            <div class="experiences-grid">
+                <!-- Dynamic experience cards with booking options -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Information -->
+    <section class="travel-info">
+        <div class="container">
+            <h2>Travel Information</h2>
+            <div class="info-tabs">
+                <button class="tab-btn active" data-tab="transport">Transportation</button>
+                <button class="tab-btn" data-tab="weather">Weather</button>
+                <button class="tab-btn" data-tab="tips">Travel Tips</button>
+            </div>
+            <div class="tab-content">
+                <div data-content="transport" class="content-section"></div>
+                <div data-content="weather" class="content-section weather-info">
+                    <div class="season-card summer">
+                        <i class="fas fa-sun"></i>
+                        <h3>Summer</h3>
+                    </div>
+                    <div class="season-card monsoon">
+                        <i class="fas fa-cloud-rain"></i>
+                        <h3>Monsoon</h3>
+                    </div>
+                    <div class="season-card winter">
+                        <i class="fas fa-snowflake"></i>
+                        <h3>Winter</h3>
+                    </div>
+                    <div class="season-card best-time">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Best Time to Visit</h3>
+                    </div>
+                </div>
+                <div data-content="tips" class="content-section"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keep existing footer -->
+
+    <!-- Required Scripts -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="module" src="stateDetails.js"></script>
+    <script type="module" src="stateInteractions.js"></script>
+</body>
+</html>

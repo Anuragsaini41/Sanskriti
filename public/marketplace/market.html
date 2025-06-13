@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="market.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <title>SanskritiCart</title>
+  </head>
+  <body>
+    <nav>
+      <div class="leftContainer">
+        <div id="brandname">SanskritiCart</div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <form action="/search" method="GET">
+            <div class="category-dropdown">
+              <div class="select-wrapper">
+                <select id="categories" name="category">
+                  <option value="" disabled selected>Select a category</option>
+                  <option value="ethnic">Ethnic Wear</option>
+                  <option value="handicrafts">Handicrafts & Artifacts</option>
+                  <option value="spiritual">Spiritual & Pooja Essentials</option>
+                  <option value="festive">Festive Collection</option>
+                  <option value="traditional-jewelry">Traditional Jewelry</option>
+                  <option value="snacks">Indian Snacks & Sweets</option>
+                  <option value="classical-music">Classical Music & Instruments</option>
+                  <option value="books">Vedic Books & Scriptures</option>
+                  <option value="eco-friendly">Eco-Friendly Items</option>
+                  <option value="ayurveda">Ayurveda & Wellness</option>
+                </select>
+              </div>
+              <input type="submit" value="Browse" />
+            </div>
+          </form>
+        </ul>
+      </div>
+      <div class="rightContainer">
+        <form action="/search" method="GET" class="search-box">
+          <div class="search-container">
+            <input type="text" name="query" id="search-input" placeholder="Search for products..." required />
+            <input type="submit" value="Search" />
+            <div class="search-suggestions" id="search-suggestions"></div>
+          </div>
+        </form>
+        <a href="market-cart.html" class="cart-button">🛒 Cart (<span id="cart-count">0</span>)</a>
+        <a href="javascript:void(0);" id="account-btn" class="account-button">
+          <span class="material-symbols-outlined">account_circle</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="adv">
+        <div class="ad-container" id="ad-slider">
+          <img class="ad" src="/img/ad1.jpg" alt="Advertisement 1" />
+          <img class="ad" src="/img/ad2.jpg" alt="Advertisement 2" />
+          <img class="ad" src="/img/ad3.jpg" alt="Advertisement 3" />
+          <img class="ad" src="/img/ad4.jpg" alt="Advertisement 4" />
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </section>
+
+      <div class="product-wrapper">
+        <div class="featured-products">
+          <h2>Featured Products</h2>
+          <div class="products" id="featured-products-list">
+            <!-- Featured product items will be dynamically added here -->
+          </div>
+        </div>
+
+        <div class="category-products">
+          <h2>Category Products</h2>
+          <div class="products" id="category-products-list">
+            <!-- Category product items will be loaded dynamically -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- फुटर सेक्शन -->
+    <footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>About Sanskriti</h3>
+      <p>Sanskriti is your gateway to exploring India's rich cultural heritage and traditions. From timeless practices to modern interpretations, we bring you closer to the essence of India through curated experiences, luxurious stays, and immersive journeys.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Explore</h3>
+      <ul class="footer-links">
+        <li><a href="./socialmedia/social.html">Commune</a></li>
+        <li><a href="./hotel/hotel.html">Hotels</a></li>
+        <li><a href="./marketplace/market.html">SanskritiCart</a></li>
+        <li><a href="./test/test.html">Cultural Quiz</a></li>
+        <li><a href="#traditions">Indian Traditions</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Help & Support</h3>
+      <ul class="footer-links">
+        <li><a href="./help/cultural-guide.html">Cultural Guide</a></li>
+        <li><a href="./help/event-policies.html">Event Policies</a></li>
+        <li><a href="./help/community-guidelines.html">Community Guidelines</a></li>
+        <li><a href="./help/faqs.html">FAQs</a></li>
+        <li><a href="./help/contact-support.html">Contact Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Get in Touch</h3>
+      <ul class="footer-contact">
+        <li><i class="contact-icon">✉️</i> info@sanskriti.com</li>
+        <li><i class="contact-icon">📞</i> +91 1800-123-4567</li>
+        <li><i class="contact-icon">📍</i> Delhi, India</li>
+      </ul>
+      <div class="footer-social">
+        <a href="#" title="Facebook">📱</a>
+        <a href="#" title="Twitter">🐦</a>
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="YouTube">📺</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Sanskriti. Discover and Experience India's Rich Cultural Heritage</p>
+  </div>
+</footer>
+
+    <script src="market.js"></script>
+  </body>
+</html>
