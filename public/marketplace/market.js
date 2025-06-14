@@ -417,8 +417,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch data from products.json in the Data folder
   fetch("../Data/products.json")
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => {
+      console.log("Response status:", response.status);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log("Data loaded successfully:", data);
       products = data.products;
       featuredProducts = data.featuredProducts;
       renderFeaturedProducts();
@@ -426,7 +433,14 @@ document.addEventListener("DOMContentLoaded", () => {
       // Always render ethnic category by default
       renderProducts("ethnic");
     })
-    .catch((error) => console.error("Error loading product data:", error));
+    .catch(error => {
+      console.error("Error loading product data:", error);
+      // Show a user-friendly error message
+      const container = document.getElementById("featured-products-list");
+      if (container) {
+        container.innerHTML = "<p>Unable to load products. Please try again later.</p>";
+      }
+    });
 });
 
 function searchProducts(query) {
@@ -602,8 +616,15 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Fetch data from products.json in the Data folder
   fetch("../Data/products.json")
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => {
+      console.log("Response status:", response.status);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log("Data loaded successfully:", data);
       products = data.products;
       featuredProducts = data.featuredProducts;
       renderFeaturedProducts();
@@ -612,7 +633,14 @@ document.addEventListener("DOMContentLoaded", () => {
       // Initialize search autocomplete after loading products
       setupSearchAutocomplete();
     })
-    .catch((error) => console.error("Error loading product data:", error));
+    .catch(error => {
+      console.error("Error loading product data:", error);
+      // Show a user-friendly error message
+      const container = document.getElementById("featured-products-list");
+      if (container) {
+        container.innerHTML = "<p>Unable to load products. Please try again later.</p>";
+      }
+    });
 });
 
 // Account button functionality
